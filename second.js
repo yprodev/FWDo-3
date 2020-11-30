@@ -3,3 +3,5 @@ const a = () => {
 }
 
 a()
+
+const b = "My name"
