@@ -1,1 +1,3 @@
 git clone "link from github to zvyazatu folder on desktop with cloud"
+git add "prepare new files to commit" 
+git commit "add new files to repositorie"
