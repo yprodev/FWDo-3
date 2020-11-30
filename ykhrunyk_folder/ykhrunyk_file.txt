@@ -1,0 +1,1 @@
+git clone "link from github to zvyazatu folder on desktop with cloud"
