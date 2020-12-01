@@ -13,4 +13,5 @@
 13.git branch -d -my_branch-	// to delete a branch
 14.git add -file. / .
 15.git rebase -branch-	//?
-16.git checkout -index-^	//?
+16.git checkout -index-^	//to work with commit one level lover
+17.git checkout HEAD~x 		//to work with commit (~) levels lover
