@@ -5,3 +5,4 @@
 5.git status
 6.git log --oneline --decorate --color
 7.git commit -am "name"
+8.git blame file.
