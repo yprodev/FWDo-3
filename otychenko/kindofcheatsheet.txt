@@ -13,3 +13,4 @@
 13.git branch -d -my_branch-	// to delete a branch
 14.git add -file. / .
 15.git rebase -branch-	//?
+16.git checkout -index-^	//?
