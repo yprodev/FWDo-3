@@ -16,3 +16,4 @@
 16.git checkout -index-^	//to work with commit one level lover
 17.git checkout HEAD~x 		//to work with commit (~) levels lover
 18.git branch --force branchname position(HEAD^,HEAD~x,index)	//we can move branch on other commit
+19.git cherry-pick -branch- -branch- -branch-		// to copy comitts from other branches
