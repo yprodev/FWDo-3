@@ -3,3 +3,4 @@
 3.touch "file."
 4.git rm "file" / rm "file" - no changes in git status ?
 5.git status
+6.git log --oneline --decorate --color
