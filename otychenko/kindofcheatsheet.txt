@@ -8,3 +8,4 @@
 8.git blame file.	// use this one to know who, when and why has change file
 9.git log -p file. / directory	// use this for to get more information about file/directory
 10.git branch -newbranch-
+11.git branch	// use this one to list all branches
