@@ -10,4 +10,4 @@ git checkout -b "Name Branche"
 
 git checkout - переключатись через бренчі 
 
-git clone - клонує з сайту чиїсь проект 
+git clone- клонує бренчу з сайту
