@@ -11,4 +11,5 @@
 11.git branch	// use this one to list all branches
 12.git checkout -my_branch-	// to choose a branch
 13.git branch -d -my_branch-	// to delete a branch
-14.git add -file. / .	
+14.git add -file. / .
+15.git rebase -branch-	//?
