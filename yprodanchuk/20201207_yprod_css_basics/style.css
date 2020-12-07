@@ -1,0 +1,48 @@
+
+/*section, p {
+	margin: 3px;
+	outline: 1px solid green;
+	word-break: break-all;
+}
+*/
+p {
+	font-size: 8px;
+}
+
+
+.customP {
+	color: red;
+}
+
+.firstParagraph.customP {
+	color: green;
+	margin: 20px auto;
+	padding: 5px 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .container .myParagraph {
+	color: red;
+	outline: 1px solid blue;
+	margin: 20px;
+}
+
+
+.myParagraph {
+	color: orange;
+}
+
+.myParagraphTwo {
+	color: purple;
+}
+
+
+/*#secondParagraph {
+	outline: 1px solid pink;
+}
+*/
+
+.firstParagraph {
+	outline: 3px solid black;
+}
