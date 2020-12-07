@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="result.html" method="POST" enctype="multipart/form-data">  
+      <div>
+        <label for="firstName"><p> <b>First Name</b> </p> </label> 
+        <input type="text" name="First Name " value="" placeholder="Use only capital letters" required id="firstName">  
+          </div> 
+             <p></p>
+       
+                       <div>
+                            <label for="secondName"> <p> <b>Second name </p></b>  </label>
+                            <input itype="text" name="Second Name" placeholder="Use only capital letters" required tabindex="1" id="secondName">  
+                         </div>
+                         
+                   
+                         <div>
+                           <label for="email"> <P><b>Email</b></P> </label> 
+                            <input type="email" name="Email" required tabindex="2" id="email"> 
+                        </div>
+                         
+                        <div>
+                          <label for="passWord"> <p><b>Password</b></p> </label> 
+                           <input type="password" name="user pass"  tabindex="3" placeholder="" id="passWord">
+                        </div>
+                         
+                         <div>
+                          <label for="telepNumb"><p><b>Telephon number +380</b></p>  </label> 
+                           <input type="tel" name="user phone"  tabindex="4" id="telepNumb">
+                         </div>
+                       
+                          <div>
+                        <label for=""><p><B>Gender</B></p></label>    
+                              <input type="radio" name="gender" value="male" required   tabindex="5" > <B>Male</B>
+                            <p></p>
+                              <input type="radio" name="gender" value="female" required tabindex="5" > <b>Female</b>
+                          </div>
+                       
+                       
+                         <div>
+                            <label> <p><b>Favorite artists</b></p>
+                              <input type="checkbox" name="Linkin park" value="yes" tabindex="6"> Linkin Park
+                              <input type="checkbox" name="Bring Me The Horizon" checked tabindex="7"> Bring Me The Horizon
+                               <input type="checkbox" name="Lamb of God" tabindex="8"> Lamb of God
+                         </div>
+                       
+                         <div>
+                       <label for="someInf"><P><B>Some informiation</B></P> </label> 
+                      <textarea name="text" tabindex="9" id="someInf"> </textarea>
+                         </div>
+                    <div>
+                        <P><B>Favorite Car</B></P>
+                        <select name="Car" tabindex="10">   
+                         <option value="Honda" >Honda</option>   
+                         <option value="Toyota" selected>Toyota</option> 
+                         <option value="Subaru">Subaru</option>
+                         <option value="BWV">BMW</option>
+                         <option value="Porshe">Porshe</option>
+                        </select>
+                    </div>  
+                    
+                    <div> 
+                    <p><B>Please send your selfie</B></p>
+                       <input type="file" name="Send photo" tabindex="9">
+                        </div> 
+                        <div>
+                        <p></p>
+                      <button type="submit" tabindex="10"><b>Send Form</b></button>
+                      <button  type="reset" tabindex="11"><b>Delete Form</b></button>
+                        </div>
+                    </form>
+</body> 
+</html>
