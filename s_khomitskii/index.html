@@ -8,19 +8,44 @@
 </head>
 
 <body>
-    <form action="result.html" method="GET">
-        <section>
-            <label for="FirstName">First name</label>
-            <input id="FirstName" type="text">
-        </section>
-        <section>
-            <label for="Second name">Second name</label>
-            <input id="Second name" type="text">
-        </section>
-        <button type="reset">Clear Form</button>
-        <button type="submit">Send Form </button>
+    <center>
+        <form action="result.html" method="GET">
+            <section>
+                <label for="FirstName"><b>First name</b></label>
+                <input id="FirstName" type="text" placeholder="Vasili">
+            </section>
+            <section>
+                <label for="Second name"><b>Second name</b></label>
+                <input id="Second name" type="text" placeholder="Pupkin">
+            </section>
+            <section>
+                <label for="password"><b>Password</b></label>
+                <input id="password" type="password" name="pass" placeholder="1.2.3.4.5.6.7.8.9...">
+            </section>
+            <section>
+                <label for="email"><b>Your email</b></label>
+                <input id="email" type="email" name="email" placeholder="......@.....">
+            </section>
+            <p><b>Indicate your gender</b></p>
+            <p><label class="radio"><input type="radio" name="g" checked><span></span> Men</label>
+                <label class="radio"><input type="radio" name="g"><span></span> Women</label>
+                <label class="radio"><input type="radio" name="g"><span></span> Androgyne</label></p>
 
-    </form>
+            <p><b>Your favorite football teams</b></p>
+            <p><input type="checkbox" name="option1" value="a1">FC Dynamo Kiev<Br>
+                <input type="checkbox" name="option2" value="a2">FC Prykarpattya Ivano-Frankivsk<Br>
+                <input type="checkbox" name="option3" value="a3">Juventus<Br>
+                <input type="checkbox" name="option4" value="a4">FC Barcelona<Br>
+                <input type="checkbox" name="option5" value="a5">Kolos-Kovalivka</p>
+
+            <form action="textarea1.php" method="post">
+                <p><b>Еnter your feedback:</b></p>
+                <p><textarea rows="10" cols="45" name="text"></textarea></p>
+            </form>
+            <button type="reset">Clear Form</button>
+            <button type="submit">Send Form </button>
+        </form>
+    </center>
 </body>
 
 </html>
