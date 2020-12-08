@@ -1,0 +1,8 @@
+git clone "link from github to zvyazatu folder on desktop with cloud"
+git add "prepare new files to commit" 
+git commit "add new files to repositorie"
+git branch "creating new branch" 
+git checkout "switch beatwen branches"
+git log "show list of all commites"
+git log --oneline "shor version of log"
+git status "show list of files added modifided or empty folder"

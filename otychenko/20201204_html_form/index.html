@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .cat {
+            width: 100px;
+            margin-top: 25px;
+        }
+        .inmar {
+            margin: 10px;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            display: inline-block;
+            margin: 5px 10px 5px 10px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        h2 {
+            margin: 5px; 
+            font-size: 30px; 
+            font-family: 'Bebas Neue', cursive;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center">
+        <img src="cat.png" class="cat" alt="">
+        <h1 style="display: inline-block; font-family: 'Bebas Neue', cursive; font-size: 35px;">Let me know everything about you</h1>
+        <img src="mcat.png" class="cat" alt="">
+    </header>
+    <main>
+    <div style="font-size: 20px;">
+        <form method="GET" action="result.html" style="text-align: center;">
+            <div>
+            <label for="name">First name</label>
+            <input type="text" id="name" name="name" class="inmar" placeholder="Petro" required>
+        </div>
+        <div>    
+        <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lastname" class="inmar" value="Bond">
+        </div>
+        <div>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" class="inmar" placeholder="noviymoped@hochuno.net" required>
+        </div>
+        <div class="inmar">
+            <label for="tel">Let me phone you tonight</label><br>
+            <input type="tel" name="tel" id="tel" value="+380">
+        </div>
+            <h2 class=".inmar">What things do you like the most of all?</h2>
+        <div style="font-size: 25px;">
+            <div class="inmar">
+                <label for="rusf">Russian films</label>
+                <input type="radio" name="there_is_no_hope" id="rusf">
+            </div>
+            <div class="inmar">
+                <label for="russ">Russian serials</label>
+                <input type="radio" name="there_is_no_hope" id="russ" checked>
+            </div>
+            <div class="inmar">
+                <label for="other">Any other things</label>
+                <input type="radio" name="there_is_no_hope" id="other" disabled>
+            </div>
+        </div>
+        <div>
+            <h2 class=".inmar">I wanna know your gender</h2>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" required>
+        </div>
+        <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+        </div>
+        <div>
+                <label for="xeno">Xenomorph</label>
+                <input type="radio" name="gender" id="xeno">
+        </div>
+        </div>
+        <div>
+            <h2 class=".inmar">
+                <label for="numb">Now you can choose your favorite number
+                </label>
+                </h2>
+            <input type="number" max="10" min="0" value="7" id="numb">
+        </div>
+        <div>
+            <h2 class=".inmar">Are you tired?</h2>
+            <div>
+                <label for="yeap">Yeap</label>
+                <input type="checkbox" name="yeap" id="yeap">
+            </div>
+            <div>
+                <label for="sure">Sure</label>
+                <input type="checkbox" name="sure" id="sure" checked>
+            </div>
+            <div>
+                <label for="ofcourse">Of course</label>
+                <input type="checkbox" name="ofcourse" id="ofcourse">
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2 class=".inmar">
+                <label for="texta">Comments
+                </label>
+                </h2>
+            <textarea name="textarea" id="texta" cols="30" rows="5" maxlength="100">You can write anything here as no one will read it.</textarea>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    </div>
+    </main>
+</body>
+</html>
