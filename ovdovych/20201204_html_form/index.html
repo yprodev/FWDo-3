@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Forms</title>
+</head>
+<body>
+    <form action="result.html" method="GET">
+
+<div>
+    <label for="fName">First name</label><input id="fName" name="fName" type="text" placeholder="Only capital first name" required>
+</div>
+<div>
+    <label for="Sname">Surname</label><input id="Sname" name="sName" type="text" value="Vdovych" required>
+</div>
+<div>
+    <label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="Only capital e-mail" required>
+</div>
+<div>
+    <p>Your most lovely book</p>
+    <label for="book1"></label><input tabindex="1" id="book1" type="checkbox" name="book1" value="Ernest Hemingway – The Old Man and The Sea"> Ernest Hemingway – The Old Man and The Sea
+    <label for="book2"></label><input tabindex="2" id="book2" type="checkbox" name="book2" value="William Somerset Maugham – Theatre"> William Somerset Maugham – Theatre
+    <label for="book3"></label><input tabindex="3" id="book3" type="checkbox" name="book3" value="Mario Puzo – The Godfather"> Mario Puzo – The Godfather
+</div>
+<div>
+    <p>Your most lovely country</p>
+    <label for="country1"></label><input tabindex="4" id="country1" type="radio" name="country1" value="Poland"> Poland
+    <label for="country2"></label><input tabindex="5" id="country2" type="radio" name="country2" value="France"> France
+    <label for="country3"></label><input tabindex="6" id="country3" type="radio" name="country3" value="Italy"> Italy
+</div>
+<div>
+    <p>Your most lovely color</p>
+    <select tabindex="7" name="color">
+        <label for="color">Your most lovely color</label>
+        <option value="-Type here-">-Type here-</option>
+        <option value="color">Red</option>
+        <option value="color">Green</option>
+        <option value="color">Yellow</option>
+    </select>
+</div>
+<div>
+    <label for="text">Additional information</label>
+    <textarea name="text" id="text" maxlength="100"></textarea>
+</div>
+<div>
+    <label for="button1"></label><button tabindex="8" id="button1" type="submit" name="button1">Send Form</button>
+    <label for="button2"></label><button tabindex="9" id="button2" type="reset" name="button2">Clear form</button>
+</div>
+        </form>
+    </body>
+</html>
