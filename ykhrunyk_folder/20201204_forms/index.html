@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms homework</title>
+</head>
+<body>
+    <form action="result.html" method="GET">
+        <section>
+            <label for="firstName">First name:</label>
+            <input id="firstName" type="text" placeholder="First name..." name="fName" required autofocus>
+        </section>
+        <section>
+            <label for="lastName">Last name:</label>
+            <input id="lastName" type="text" placeholder="Last name..." value="last name example" name="lName" required>
+        </section>
+        <section>
+            <label for="eMail">Last name:</label>
+            <input id="eMail" type="email" placeholder="your_email@..." name="eMail" required>
+        </section>
+        <section>
+            <h4>Witch country would you like to visit next?</h4>
+            <label for="denmark"><input id="denmark" type="radio" name="country" required>Denmark</label>
+            <label for="usa"><input id="usa" type="radio" name="country">USA</label>
+            <label for="Poland"><input id="Poland" type="radio" name="country">Poland</label>
+        </section>
+        <section>
+            <h4>Whitch book would you like to read next?</h4>
+            <label for="hp1"><input type="checkbox" name="book" id="hp1" required>Harry Potter 1</label>
+            <label for="hp2"><input type="checkbox" name="book" id="hp2" required>Harry Potter 2</label>
+            <label for="hp3"><input type="checkbox" name="book" id="hp3" required>Harry Potter 3</label>
+        </section>
+        <section>
+            <label for="comment">Please, leave your commet about this page:</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" required maxlength="100" placeholder="Max 100 symbols..."></textarea>
+        </section>
+        <button type="submit">Send form</button>
+        <input type="reset" name="reset" id="reset" value="Reset">
+    </form>
+</body>
+</html>

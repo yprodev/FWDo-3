@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Forms</title>
+</head>
+<body>
+
+<form action="result.html" method="GET">
+ <section>
+    <label for="firstName">First Name</label>
+    <input required id="firstName" name="fname" type="text" placeholder="Only capital letters">
+</section>
+<section>
+    <label for="lastName">Last Name</label>
+    <input id="lastName" type="text" name="lname" value="Madryha">
+</section>
+<section>
+    <label for="email">Email</label>
+    <input required id="email" name="email" type="email" placeholder="YourEmail@gmail.com">
+</section>
+
+<section>
+    
+    <p>What kind of music do you listen to?</p>
+    <label for="pop"></label>
+    <input type="checkbox" value="pop" name="music" id="pop" >Pop
+  
+    <label for="rock"></label>
+   <input type="checkbox" name="music" value="rock" id="rock">Rock
+   
+   <label for="hiphop"></label>
+   <input type="checkbox" name="music" value="hiphop" id="hiphop">Hip Hop
+
+   <label for="elecnronic"></label>
+    <input type="checkbox" name="music" value="electronic" id="electronic">Electronic
+
+</section>
+<section>
+    <p> Which countries do you want to visit?</p>
+   
+    <input type="radio" id="contactChoice1"
+     name="contact" value="usa">
+    <label for="contactChoice1">USA</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="canada">
+    <label for="contactChoice2">Canada</label>
+
+    <input type="radio" id="contactChoice3"
+     name="contact" value="britain">
+    <label for="contactChoice3">Great Britain</label>
+
+    <input type="radio" id="contactChoice4"
+    name="contact" value="scotland">
+   <label for="contactChoice4">Scotland</label>
+
+
+</section>
+<section>
+   <section><label for="text"><p style="font-size:larger; color:red;" >Your questions:</p> </label></section> 
+  <textarea required name="text" id="text" cols="30" rows="10" maxlength="100"></textarea>
+
+</section>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+</body>
+</html>

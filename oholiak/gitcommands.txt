@@ -1,0 +1,7 @@
+git init  - initializing a repository
+git add - stages a single file 
+git status - full status 
+git commit -m “Message” -  Commits with a one-line message
+git commit -am “Message”  - Skipping the staging area
+
+
