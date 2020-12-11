@@ -1,0 +1,134 @@
+body {
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Andika New Basic', sans-serif;
+}
+.moreinf {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 30px;
+    color: white;
+    border: white 5px solid;
+    padding: 0px 8px;
+}
+header div:first-child {
+    text-align: center;
+}
+header h1 {
+    color: white;
+    border: white 5px solid;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+header h2{
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left:5%;
+}
+main>div:first-child {
+    display: inline;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.sborder {
+    border: white 3px solid;
+    font-size: 35px;
+    color: white;
+}
+.riconimg {
+    width: 70px;
+    margin-left: 30px;  
+}
+.liconimg {
+    width: 70px;
+    margin-right: 30px;  
+}
+a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    }
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+div h2.headmap {
+    display: inline;
+    color: white;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.socialicons {
+    margin-top: 50px;
+    width: 255px;
+    height: 255px;
+}
+div h2.list {
+    color: white;
+    display: inline-block;
+    font-size: 35px;
+    padding: 10px;
+}
+ul, ol {
+list-style: inside;
+}
+ul {
+        color: white;
+        font-size: 35px;
+        border: 3px white solid;
+}
+ul.second {
+        list-style-type: square;
+        font-size: 25px;
+        border:none;
+}
+article header {
+        font-size: 35px;
+        color: white;
+        text-decoration: underline;
+}
+.articlebody {
+background-color: rgba(255, 255, 255, 0.507);
+color: black;
+font-size: 20px;
+}
+
+article header h2{
+    border: white 3px solid;
+    margin-right: 20px;
+}
+article h3 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 25px;
+    color: white;
+    text-decoration: underline;
+}
+button {
+    display:inline-block;
+    color: white;
+    margin-left: 1300px;
+    width: 150px;
+    height: 50px;
+    background-color:black;
+    font-size: 20px;
+    padding: 0px;
+    border: white 3px solid;
+}
+button:hover {
+    display:inline-block;
+    color: black;
+    margin-left: 1300px;
+    width: 150px;
+    height: 50px;
+    background-color:white;
+    font-size: 20px;
+    padding: 0px;
+    border: black 3px solid;
+}

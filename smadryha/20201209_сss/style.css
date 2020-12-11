@@ -1,0 +1,87 @@
+table {
+    width: 75%; 
+    background:black; 
+    color: rebeccapurple; 
+    border-spacing: 1px; 
+}
+th {
+    background-color: rgb(88, 219, 219); 
+    margin: 10px;
+    padding: 15px;
+    font-size: x-large;
+    
+}
+tr{
+    background-color: rgb(226, 120, 161);
+    padding: 5px;
+    font-size: larger;
+    text-align: center; }
+
+    ul.breadcrumb {
+        background-color:rgba(143, 29, 29, 0.37);
+    border-width: 1px;
+    
+    border-color: cyan;
+    border-radius: 5px;
+    box-shadow: darkgray;
+    overflow: hidden;
+    width: 75%;
+
+        
+}
+ul.breadcrumb li  {
+    display: inline;
+    float: none;
+    }
+
+    ul.breadcrumb li a {
+        color: darkorchid;
+        padding: 12px;
+        text-decoration: darkred;
+        
+    }
+    
+
+   .pagination{
+       display: inline-block;
+      padding: 25px;
+       
+
+   }
+   .pagination a {
+       color:purple;
+       float: left;
+       padding:  10px 20px ;
+       text-decoration: none;
+       
+   }
+.pagination a.active{
+    background-color:rgb(88, 219, 219) ;
+    color: purple;
+    border-radius: 5px;
+    
+}
+.pagination a:hover:not(.active) {
+    background-color: black;
+    border-radius: 5px;
+  }
+#first, #yellow{
+    width: 200px;
+    height: 100px;
+ position: absolute;
+}
+
+#first{
+top: 50px;
+width: 100%;
+
+}
+
+#yellow{
+     
+      background-color: yellow;
+      width: 100%;
+      height: 500px;
+      left: 10px;
+      opacity: 0.3;
+  }
