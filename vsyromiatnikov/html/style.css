@@ -1,0 +1,17 @@
+
+    
+a {
+color: black;
+}
+
+[href="https://wroom.ru/cars/toyota/supra/history"]
+{color: rgba(184, 184, 20, 0.986);
+font-size: larger;
+font-weight: bold;}
+
+[href="https://wroom.ru/cars/toyota/celica"]
+{ color: rgba(184, 184, 20, 0.986) 
+; font-size: larger ;
+font-weight: bold;
+}  
+
