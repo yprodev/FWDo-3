@@ -9,13 +9,14 @@ h1.main {
     font-size: 30px;
     border: black solid 5px;
     padding: 5px;
+    background-color: rgba(255, 255, 255, 0.199);
 }
 h1.main:hover {
     color: white;
     background-color: black;
 }
 .pagination {
-    background-color: none;
+    background-color:rgba(255, 255, 255, 0.199);
     display: inline-block;
     border: 3px black solid;
     padding: 0px;
@@ -85,10 +86,21 @@ a:hover {
 .stable td:hover {
     text-decoration: underline;
 }
+.santa {
+    width: 500px;
+    position: absolute;
+    margin-left: 520px;
+    margin-top: -80px;
+
+}
 .fpic {
     position: absolute;
     margin-top: 193px;
     width: 1520px;
     height: 300px;
     opacity: 0.5;
+}
+.needotherway {
+    background-color:rgba(0, 0, 0, 0.599);
+    color: white;
 }
