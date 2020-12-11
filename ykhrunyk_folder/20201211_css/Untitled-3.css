@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+th, td {
+
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+th {
+    font-size: 40px;
+}
+td {
+    font-size: 25px;
+}
+
+.breadcrump {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+}
+table {
+    border-collapse: collapse;
+    box-sizing: inherit;
+    width: 100%;
+}
+ol {
+    list-style: none;
+    padding: 10px;
+}
+.breadcrump, li {
+    display: inline-block;
+}

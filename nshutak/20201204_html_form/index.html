@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Shutak's Form</title>
+</head>
+<body>
+    <header>
+        <h1>Please, fill the next form.</h1>
+    </header>
+    <main>
+        <form action="result.html" method="get">
+            <fieldset>
+                <legend>Information about person</legend>
+                <label for="first_name">Enter your first name:</label> <br>
+                <input type="text" id="first_name" name="first_name" placeholder="Your first name"> <br> <br>
+
+                <label for="last_name">Enter your last name:</label> <br>
+                <input type="text" id="last_name" name="last_name" value="Bodnarenko" required> <br> <br>
+
+                <label for="email">Enter your e-mail:</label> <br>
+                <input type="email"  id="email" name="email" placeholder="yours@email.com" required> <br> <br>
+            
+                <label for="book_question">What is your favourite book?</label> <br>
+                <select name="book_question" id="book_question">
+                    <option value="Bible">Біблія</option>
+                    <option value="Kobzar">Т.Шевченко. Кобзар</option>
+                    <option value="Kaidasheva's family">І.Нечуй-Левицький. Кайдашева сім'я</option>
+                    <option value="Eneїda">І.Котляревський. Енеїда</option>
+                </select>
+                <br>
+
+                <!--Прочитала у завданні checkbox і зрозуміла, що то певно так треба було зробити, як варіант нижче-->
+                <p>What is your favourite book?</p>
+                <input type="checkbox" id="Bible" name="Bible" value="Bible">
+                <label for="Bible">Біблія</label><br>
+
+                <input type="checkbox" id="Kobzar" name="Kobzar" value="Kobzar">
+                <label for="Kobzar">Т.Шевченко. Кобзар</label><br>
+ 
+                <input type="checkbox" id="Kaidasheva's family" name="Kaidasheva's family" value="Kaidasheva's family">
+                <label for="Kaidasheva's family">І.Нечуй-Левицький. Кайдашева сім'я</label><br>
+
+                <input type="checkbox" id="Eneїda" name="Eneїda" value="Eneїda">
+                <label for="Eneїda">І.Котляревський. Енеїда</label><br> <br>
+
+                <p>What country are you going to visit?</p>
+                <input type="radio" name="netherlands" id="netherlands" value="netherlands">
+                <label for="netherlands">Netherlands</label> <br>
+
+                <input type="radio" name="usa" id="usa" value="usa">
+                <label for="usa">United States of America</label> <br>
+
+                <input type="radio" name="china" id="china" value="china">
+                <label for="china">China</label> <br>
+
+                <input type="radio" name="en" id="en" value="en">
+                <label for="en">England</label> <br> <br>
+
+                <textarea name="comment" id="comment" rows="5" cols="30" maxlength="100" placeholder="Enter your wishes for us"></textarea>
+                <br> 
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Скинути всі дані">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
