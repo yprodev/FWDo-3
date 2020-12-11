@@ -16,3 +16,25 @@ table
 body {
   font-family: 'Roboto', sans-serif !important;
 }
+
+.tablemain tr:nth-child(even) {
+  background-color: white;
+}
+
+.tablemain tr:nth-child(odd) {
+  background-color: black;
+}
+
+table {
+  border: 0 10px;
+  font-weight: bold;
+}
+
+td {
+  background-color: gray;
+}
+
+.red {
+  background: red;
+  color: red;
+}
