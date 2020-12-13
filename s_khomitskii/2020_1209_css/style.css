@@ -1,0 +1,133 @@
+.backg {
+  background-image: url();
+background-color: rgb(167, 221, 218);
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.breadcrumb-item>a,
+.breadcrumb-item.active {
+  color: #fff;
+  display: block;
+  background: #7b1fa2;
+  text-decoration: none;
+  position: relative;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px 0 5px;
+  text-align: center;
+  margin-right: 23px;
+  user-select: none;
+}
+
+.breadcrumb-item:first-child>a {
+  padding-left: 15px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.breadcrumb-item:last-child>a,
+.breadcrumb-item.active {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-right: 0;
+  padding-right: 15px;
+}
+
+.breadcrumb-item:first-child>a::before,
+.breadcrumb-item:last-child>a::after {
+  border: none;
+}
+
+.breadcrumb-item>a::before,
+.breadcrumb-item>a::after,
+.breadcrumb-item.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 0 solid #7b1fa2;
+  border-width: 17px 10px;
+  width: 0;
+  height: 0;
+}
+
+.breadcrumb-item>a::before,
+.breadcrumb-item.active::before {
+  left: -20px;
+  border-left-color: transparent;
+}
+
+.breadcrumb-item>a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #7b1fa2;
+}
+
+.breadcrumb-item>a:hover {
+  background-color: #6a1b9a;
+}
+
+.breadcrumb-item>a:hover::before {
+  border-color: #6a1b9a;
+  border-left-color: transparent;
+}
+
+.breadcrumb-item>a:hover::after {
+  border-left-color: #6a1b9a;
+}
+
+.breadcrumb-item.active {
+  color: #6a1b9a;
+  background-color: #f3e5f5;
+}
+
+.breadcrumb-item.active::before {
+  border-color: #f3e5f5;
+  border-left-color: transparent;
+}
+
+.parent{
+
+    background-color: rgb(147, 169, 209);
+height: 100px;
+
+}
+
+.child{
+    border:0.5px solid blueviolet;
+    background-color: palegoldenrod;
+height: 50px;
+}
+
+
+
+ table {
+  opacity: 0.6;
+  width: 65%;
+  height: 50%;
+  font-family: sans-serif;
+  background: rgb(7, 5, 5);
+}
+
+th {
+  font-size: 30px;
+  background-color:  #7b1fa2;
+}
+
+td {
+  font-size: 25px;
+  background-color: rgb(212, 228, 212);
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
