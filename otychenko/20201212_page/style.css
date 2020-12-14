@@ -1,0 +1,164 @@
+/*  colors
+red #dc3545
+orange #ffc107
+green #198754
+blue - #0d6efd
+borders - #212529
+fonts
+  lighter - #6c757d
+  darker - #212529
+
+table
+  darker #f2f2f2
+
+*/
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  color: #212529;
+}
+
+.borderdiv {
+  border: 2px solid #3b3c3d;
+  border-top: 1px solid #212529;
+  width: 1500px;
+}
+
+h3 {
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+.picture {
+display: inline-block;
+border: 3px #212529 solid;
+width: 305px;
+text-align: left;
+padding: 5px;
+margin-bottom: 30px;
+margin-left:75px;
+margin-top:30px;
+}
+
+.mainpic {
+  width: 300px;
+  padding: 0px;
+}
+
+button {
+  margin: 0px;
+  display: inline;
+  font-size: 15px;
+  padding: 8px 15px 8px 15px;
+}
+
+.fbut button:first-child:hover {
+  border-top-left-radius: 35%;
+  border-bottom-left-radius: 35%; 
+}
+
+.fbut button:last-child:hover {
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+
+.formsubmit:hover {
+  background-color:black;
+  color: white;
+}
+
+.redbut {
+  background-color: #dc3545;
+  color: white;
+}
+
+.redbut:hover {
+  background-color: black;
+  color: #dc3545;
+}
+
+.yellowbut {
+  background-color: #ffc107;
+  color: black;
+}
+
+.yellowbut:hover {
+  background-color: black;
+  color: #ffc107; 
+}
+
+.greenbut {
+  background-color: #198754;
+  color: white;
+}
+
+.greenbut:hover {
+  background-color: black;
+  color: #198754;
+}
+
+.form {
+  width: 70%;
+  padding: 25px 25px 25px 75px;
+  margin-bottom: 30px;
+}
+
+.formrows {
+  height:30px;
+  width: 100%;
+  resize: none;
+}
+
+.undtext {
+  color: #6c757d;
+  margin-top: 0px;
+}
+
+#adlabel {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.formsubmit {
+  background-color: #0d6efd;
+  margin-top: 15px;
+  color: white;
+}
+
+.maintable {
+  width: 90%;
+  padding: 45px 45px 45px 45px;
+  text-align: left;
+}
+
+.mtable {
+  width: 100%;
+  height: 200px;  
+  border-collapse: collapse;
+}
+
+.thead {
+  background-color: rgba(245, 245, 245, 0.805);
+  padding: 100px;
+}
+
+th {
+  padding: 30px;
+}
+
+table>tbody tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(245, 245, 245, 0.805);
+}
+
+tr:nth-child(n):hover {
+background-color: black;
+color: white;
+}
+
+th:nth-child(n):hover {
+  color: red;
+}
