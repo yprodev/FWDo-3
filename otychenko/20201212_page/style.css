@@ -50,6 +50,7 @@ button {
   display: inline;
   font-size: 15px;
   padding: 8px 15px 8px 15px;
+  border: none;
 }
 
 .fbut button:first-child:hover {
@@ -161,4 +162,11 @@ color: white;
 
 th:nth-child(n):hover {
   color: red;
+}
+
+.santa3 {
+  display: inline-block;
+  width: 15%;
+  z-index: 1;
+  margin-top: 30px;
 }
