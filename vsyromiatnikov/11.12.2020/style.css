@@ -1,0 +1,186 @@
+
+.bdcl{
+height:480px;
+border-left:solid;
+border-top:solid;
+
+color:rgb(173, 173, 173);
+
+
+}
+
+
+
+
+.firstblock {
+display: block;
+left:100px;
+width:350px;
+height:450px;
+border-style: solid;
+margin:10px 25px;
+
+}
+
+
+
+
+.img{
+display: block;
+height: 100px;
+width: 200px;
+padding:60px 60px;
+}
+
+.h1st{
+display: block;
+text-align: center;
+}
+
+.text{
+font-size:25px;
+text-align: center;
+height:50px;
+font-style: italic;
+}
+
+.orange{
+padding:15px 15px;
+background:orange;
+color:black;
+position: relative;
+left:52px;
+border: orange;
+border-radius:5px;
+}
+
+.purple{
+padding:15px 15px;
+background:purple;
+color:rgb(236, 221, 221);
+position: relative;
+left:45px;
+border: purple;
+border-radius: 0px;
+z-index:1;
+
+}
+.white{
+padding:15px 15px;
+background:greenyellow;
+color:rgb(0, 0, 0);
+position: relative;
+left:40px;
+border:greenyellow;
+border-radius:5px; 
+}
+
+.divform{
+border-left:solid;
+border-top:solid;
+width:1900px;
+
+}
+
+
+
+.fh1{
+font-size:x-large;
+text-align: center; 
+margin:10px 60px;
+width:300px; 
+height:30px;
+}
+
+.pform{
+font-size:15px;
+margin:2px 2px;
+padding:10px 15px;
+height:15px;
+width:120px;
+font-weight: bold;
+}
+
+.fname{
+padding:5px 300px;
+margin:2px 18px;
+text-align:left;
+}
+
+.femail{
+padding:15px 300px;
+margin:5px 20px;
+color:black;
+}   
+
+.pform1{
+font-size:10px;
+margin:0px 2px;
+padding:10px 15px;
+height:15px;
+width:100px;
+}
+
+.textarea{
+margin:0px 20px;
+width:760px;
+}
+
+.pform2{
+font-size:10pxpx;
+margin:0px 2px;
+padding:10px 15px;
+height:15px;
+width:170px;
+font-weight:bold;
+}
+
+
+.checkbox{
+margin:0px 20px;
+
+}
+
+.bsubmit{
+margin:5px 25px;
+height:30px;
+width:100px;
+background-color: brown;
+color:black;
+border-style:solid;
+
+}
+.divtable{
+width:1900px;
+border-left:solid;
+border-top:solid;
+color:rgb(187, 184, 184);
+}
+
+
+th{
+
+
+
+
+}
+th,td,tr{
+text-align:center;
+padding:15px 50px;  
+
+
+
+
+}
+
+.colortd{
+background-color:grey;
+}
+
+
+table{
+margin:10px 10px;
+border-collapse: collapse;
+}
+
+
