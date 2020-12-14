@@ -1,0 +1,83 @@
+ body  {
+    margin: 40px;
+ }
+ 
+ .div1 {
+     padding: 40px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+.beach {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border: solid rgb(158, 156, 156) 1px;
+    margin: 50px 1500px 50px 50px;
+    padding: 0px 0px 0px 0px;
+    width: 400px;
+}
+
+table {
+    margin: 40px;
+    width: 94%;
+    padding: 10px;
+    border-spacing: 0;
+}
+
+.button1{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button2{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.button3{
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.submit {
+    margin-top: 15px;
+    background-color: #0f6efd;
+    border: unset;
+    font-size: 14px;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bl {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.white{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.gray {
+    background-color: gray;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+th{
+    text-align: left;
+    border-bottom: solid black 1px;
+}
+
+.fck {
+    border: solid rgb(110, 110, 110) 1px;
+    margin: 50px 1500px 50px 50px;
+    padding: 0px 0px 0px 0px;
+    width: 400px;
+}
