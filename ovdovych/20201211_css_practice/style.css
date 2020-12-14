@@ -1,0 +1,108 @@
+/*  colors
+red #dc3545
+orange #ffc107
+green #198754
+blue - #0d6efd
+borders - #212529
+fonts
+  lighter - #6c757d
+  darker - #212529
+
+table
+  darker #f2f2f2
+
+*/
+body {
+    outline: 10px solid #6c757d;
+}
+img {
+    width: 200px;
+}
+
+.divimg {
+    width: 40%;
+    border-radius: 1px;
+    text-align: left;
+    margin: 0;
+    outline: 1px solid #6c757d;
+}
+
+.btn .red {
+    background-color: #dc3545;
+    width: 25%;
+    border: 5px transparent;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+}
+
+.btn .yellow {
+    background-color: #ffc107;
+    width: 30%;
+    border: 5px transparent;
+    padding: 5px;
+}
+
+.btn .green {
+    background-color: #198754;
+    width: 25%;
+    border: 5px transparent;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+}
+
+button.submite {
+    background-color: #0d6efd;
+    border-radius: 20px;
+    width: 7%;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    outline: 1px solid #6c757d;
+    border-spacing: 10;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    padding: 150px;
+}
+
+th, td {
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+div.css {
+    outline: 1px solid #6c757d;
+    padding: 15px;
+}
+
+figure.divimg {
+    outline: 1px solid #6c757d;
+    width: 230px;
+}
+
+tbody tr:nth-child(even) {
+    background: #a3abb3;
+}
+
+.undername {
+    color: #6c757d;
+}
+
+label.name {
+    font-size: 50px;
+}
+
+button .red, .yellow, .green {
+    border-collapse: collapse;
+}
+
+textarea {
+    margin: auto;
+    width: 100%;
+    border-spacing: 10px;
+}
+
