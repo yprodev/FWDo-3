@@ -397,7 +397,7 @@ body {
 
 a, a:hover, a:active, a:focus {
     text-decoration: none;
-    color: black;
+    color: rgb(1,7,5);
 }
 
 img{
@@ -557,26 +557,34 @@ img{
 
 .left__side-text{
     width: 407px;
-    border-top: 3px solid black;
+    border-top: 3px solid rgb(1,7,5);
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
-    text-shadow: 3px 3xp 3px black;
+    text-shadow: 3px 3xp 3px rgb(1,7,5);
+}
+
+.div__image-wrapper {
+    background: url(../img/saniizers/left-img.heic) no-repeat;
+    background-size: cover;
+    width: 400px;
+    box-shadow: 10px 10px 5px rgb(1,7,5);
+    transition: 0.15s;
+}
+
+.div__image-wrapper:hover {
+    background: url(..//img/saniizers/left-img2.jpg) no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
 }
 
 .left__side-img {
-    width: 400px;
-    box-shadow: 10px 10px 5px black;
-    transition: .15s
-}
-
-.left__side:hover {
-    transform: scale(1.1);
+    opacity: 0;
 }
 
 .left__side:hover .left__side-img {
     width: 400px;
-    box-shadow: 15px 15px 10px black;
+    box-shadow: 15px 15px 10px rgb(1,7,5);
 }
 
 .right__side {
@@ -588,8 +596,8 @@ img{
     padding-right: 15px;
     padding-top: 15px;
     text-align: left;
-    border-right: 3px solid black;
-    border-top: 3px solid black;
+    border-right: 3px solid rgb(1,7,5);
+    border-top: 3px solid rgb(1,7,5);
     font-size: 25px;
     margin-bottom: 45px;
     transition: 0.15s;
