@@ -7,11 +7,7 @@ section {
 
 .cardContainer {
     border: 1px solid green;
-}
-
-img {
-    width: 200px;
-    height: 120px;
+    width: 310px;
 }
 
 /*div.cardContainer p {
@@ -23,8 +19,16 @@ img {
     padding: 5px;
 }
 
+img {
+    width: 200px;
+    height: 120px;
+}
 button {
+    border: 1px solid rgb(107, 104, 104);
     border-radius: 50% 20% / 10% 40%;
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
 }
 .buttonOne {
     background-color: red;
@@ -32,6 +36,7 @@ button {
 }
 .buttonTwo {
     background-color: rgb(116, 179, 16);
+    color: yellow;
 }
 .buttonThree {
     background-color: red;
