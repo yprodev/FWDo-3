@@ -1,0 +1,29 @@
+.card.card body {
+width: 50%;
+}
+
+.carousel-item {
+margin-left: 290px;
+padding-top: 2px;
+}
+
+.row {
+margin-top: 100px;
+}
+
+div.carousel-caption {
+margin-right: 200px;
+margin-bottom: 5px;
+}
+
+.container-md {
+text-align: center;
+margin-top: 20px;
+color: rgba(255, 255, 255, 0.857);
+}
+
+.texture {
+color: rgba(218, 251, 255, 0.885);
+}
+
+
