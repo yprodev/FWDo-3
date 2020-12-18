@@ -1,0 +1,67 @@
+
+.myClassBackground {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.container1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* outline: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 222px; */
+}
+.col {
+    display: flex;
+    /* outline: 1px solid black; */
+    justify-content: center;
+    align-content:space-around;
+}
+.text-lorem {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 250px 20px 50px;
+    /* border: 1px solid black; */
+    
+}
+
+.FirstCard {
+    display: flex;
+}
+.roundedMyStyle {
+    justify-content: flex-end;
+    align-items: center;
+    height: 230px;
+}
+.roundedMyStyle:hover {
+    box-shadow: 5px 5px 5px white;
+    justify-content: flex-end;
+    align-items: center;
+    height: 230px;
+}
+
+.colFlexClass {
+    display: flex;
+    justify-content: space-around;
+}
+.corection {
+    height: 250px;
+    width: 100%;
+}
+
+.cardShadow:hover {
+    box-shadow: 15px 15px 5px white;
+}
