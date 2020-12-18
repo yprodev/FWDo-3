@@ -1,0 +1,59 @@
+body{ 
+
+
+    background-image:url(vincent-guth-ISI5DlnYvuY-unsplash.jpg) ;
+    background-size: 100%;
+}
+
+h1,h3{
+    text-align: center;
+    color: white; 
+    
+}
+p{ 
+    text-align: center;
+    /* white-space: pre-wrap; */
+color: white;
+}
+img{
+   margin:33px ;
+  
+   border-radius: 5px;
+   
+    
+}
+
+.container {
+ 
+display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+footer{
+    /* color: rgb(18, 18, 179); */
+    text-align: right;
+    
+}
+.back{
+   background-color: coral;
+ 
+}
+.text{
+text-align: center;
+text-decoration: forestgreen;
+
+}
+.video{
+    text-align: center;
+    
+}
+input{
+    color: rgb(36, 143, 36);
+}
+
