@@ -1,0 +1,70 @@
+@import './reset.css';
+body {
+    background-image: url(./img/thumb-1920-836946.jpg);
+    font-family: Dosis;
+}
+
+.hw-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hw-title, 
+.hw-subtitle, 
+.hw-description {
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.hw-title {
+    font-size: 35px;
+    margin: 25px 0px 35px 0px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hw-subtitle {
+    font-size: 25px;
+}
+
+.hw-description {
+    width: 65%;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.hw-card {
+    margin: 0 25px 0 25px;
+    padding: 15px;
+    flex-direction: column;
+    color: rgba(201, 201, 201, 0.8);
+}
+
+.hw-card:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+    color: rgb(255, 255, 255);
+}
+
+.picture {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: inherit;
+    border-radius: 10px;
+}
+
+.cadr-title {
+    margin: 15px 0px 10px 0px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card-description {
+    line-height: 25px;
+    font-size: 15px;
+}
