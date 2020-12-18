@@ -1,0 +1,209 @@
+.body {
+    background: url(../img/bg.jpg) center;
+    background-size: cover;
+    color: white;
+    transition: 0.8s;
+}
+
+.container__title-content {
+    text-align: center;
+    padding-top: 8%;
+    color: white;
+    margin-bottom: 7%;
+    transition: 0.8s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.card-img-top {
+    margin-bottom: 7%;
+}
+
+.container__title-first {
+    font-size: 200%;
+    font-weight: 400;
+    margin-bottom: 3%;
+}
+
+.container__title-second {
+    font-size: 350%;
+}
+
+.card-body {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0) ;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.15s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.japan-title{
+    font-size: 300%;
+    display: inline-block;
+    border: white 3px solid;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px white;
+}
+
+.japan__container {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.164);
+}
+
+.header-desc {
+    display: inline-block;
+    font-size: 250%;
+    margin-bottom: 5%;
+    border: white solid 3px;  
+    padding: 15px;  
+}
+
+.desc {
+    font-size: 150%;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.desc__japan {
+    border-left: white 3px solid;
+    padding-left: 15px;
+}
+
+.japan__but {
+    text-align: left;
+}
+
+.desc__greece {
+    border-right: 3px white solid;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.greece_but {
+    text-align: right;
+}
+
+.carousel-inner{
+    width: 648px;
+    height: 390px;
+}
+
+.Ukraine {
+    margin-top: 13%;
+    text-align: center;
+}
+
+.Ukraine__header {
+font-size: 300%;
+display: inline-block;
+border: white 3px solid;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 1px white;
+margin-bottom: 10%;
+}
+
+.Ukraine-first-imgs {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.164);
+}
+
+.Ukraine-first-imgs:hover {
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.692);
+}
+
+.Ukraine-desc {
+    margin-top: 3%;
+    font-size: 145%;
+    margin-bottom: 8%;
+    border: 3px white solid;
+}
+
+.canada__container {
+    text-align: center;
+}
+
+.canada__header {
+    font-size: 300%;
+    display: inline-block;
+    border: white 3px solid;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px white;
+    margin-bottom: 10%;
+}
+
+.canada_img {
+    width: 100%;
+    margin-bottom: 13%;
+    border-radius: 15px;
+}
+
+.canada__desc-right {
+    width: 60%;
+    text-align: left;
+    font-size: 150%;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.canada__desc-left {
+    padding-left: 40%;
+    width: 100%;
+    text-align: right;
+    font-size: 150%;
+    transition: 0.15s;
+}
+
+.border__desc-left-text {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    display: inline-block;
+}
+
+.canada__desc-left:hover {
+    padding-left: 0%;
+    width: 100%;
+    text-align: right;
+    font-size: 190%;
+}
+
+.gotop {
+    text-align: center;
+}
+
+.gotopbut {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
