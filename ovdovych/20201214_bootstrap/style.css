@@ -8,7 +8,7 @@ padding-top: 2px;
 }
 
 .row {
-margin-top: 100px;
+margin-top: 50px;
 }
 
 div.carousel-caption {
@@ -22,8 +22,24 @@ margin-top: 20px;
 color: rgba(255, 255, 255, 0.857);
 }
 
-.texture {
+.texture, .texture2 {
 color: rgba(218, 251, 255, 0.885);
+opacity: 0.6;
 }
 
+.texture2 {
+    margin-top: 20px;
+}
 
+.card-body {
+    background-color: rgba(29, 72, 25, 0.57);
+}
+
+.col1 {
+    color: rgba(255, 255, 255, 0.857);
+}
+
+.col2 {
+    color: rgba(218, 251, 255, 0.885);
+    opacity: 0.6;
+}
