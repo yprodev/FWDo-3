@@ -1,0 +1,326 @@
+.body {
+    text-align: center;
+    background: url(../img/bg.jpg) no-repeat center center /*fixed*/;
+    background-size: cover;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+.country-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    outline: 3px rgba(255, 255, 255, 0.514) solid;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+/* intro styles start */
+
+.intro__subtitle,
+.intro__description {
+    margin-bottom: 30px;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.intro__subtitle {
+    margin-top: 15%;
+}
+
+.intro__title {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.intro__items {
+    grid-column-gap: 2%;
+}
+
+.intro__item {
+    text-align: left;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.intro__items-img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.intro__items-img > img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.intro__items-header {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.intro__items-description {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 20px;
+    margin-bottom: 30%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+
+.intro__item:hover {
+    transform: scale(1.1);
+}
+
+.intro__item:hover .intro__items-description {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+/* intro styles end */
+
+/* main styles start переробити ідентифікатори*/
+
+.main {
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    padding-top: 5%;
+}
+
+.main__row {
+    align-items: center;
+}
+
+.main__container-description {
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.main__container-img-first {
+    background: url(../img/first-slide-img.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 300px;
+    margin: 0 auto; 
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px rgba(255, 255, 255, 0.151);
+    resize: none;
+    animation: self-made__slider 9s infinite;
+}
+
+
+@keyframes self-made__slider {
+    0% {
+        background: url(../img/first-slide-img.jpg) center;
+        background-size: cover;
+    }
+    33% {
+        background: url(../img/second-slide-img.jpg) center;
+        background-size: cover;
+    }
+    66% {
+        background: url(../img/third-slide-img.jpg) center;
+        background-size: cover;
+    }
+    100% {
+        background: url(../img/first-slide-img.jpg) center;
+        background-size: cover;
+        }
+}
+
+.main__container-img-second {
+    background: url(../img/first2-slide-img.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 300px;
+    margin: 0 auto; 
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px rgba(255, 255, 255, 0.151);
+    resize: none;
+    animation: self-made__slider2 9s infinite;
+}
+
+@keyframes self-made__slider2 {
+    0% {
+        background: url(../img/first2-slide-img.jpg) center;
+        background-size: cover;
+    }
+    33% {
+        background: url(../img/second2-slide-img.jpg) center;
+        background-size: cover;
+    }
+
+    66% {
+        background: url(../img/third2-slide-img.jpg) center;
+        background-size: cover;
+    }
+    100% {
+        background: url(../img/first2-slide-img.jpg) center;
+        background-size: cover;
+        }
+}
+
+/* main styles end */
+
+/* ukraine styles start */
+
+.ukraine {
+    margin-top: 7%;
+}
+
+.ukraine__img {
+    width: 100%;
+    height: 90%;
+}
+
+.ukraine__img > img {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.151);
+    margin-bottom: 20px;
+}
+
+.ukraine__header {
+    display: inline-block;
+    outline: rgba(255, 255, 255, 0.5) 3px solid;
+    padding: 15px;
+}
+
+.ukraine__description {
+    line-height: 30px;
+}
+
+.ukraine__img-description {
+    color: rgba(255, 255, 255, 0);
+    display: inline;
+    padding: 7px 20px;
+}
+
+.ukraine__img:hover .ukraine__img-description {
+    animation: ukraine-desc-anim 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ukraine-desc-anim {
+    25% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        color: white;
+    }
+}
+
+@media (max-width:900px) {
+    .ukraine__img-description {
+        opacity: 1;
+    }
+}
+
+.ukraine__row-second {
+    margin-bottom: 3%;
+}
+
+/* ukraine styles end */
+
+/* upbutton styles start */
+
+.upbutton:focus {
+    animation: lala 1s infinite ;
+}
+
+@keyframes lala {
+    0% {background-color:  red;}
+    20% {background-color: blue;}
+    40% {background-color: yellow;}
+    60% {background-color: green;}
+    80% {background-color: orange;}
+    100% {background-color: red;}
+}
+.upbutton__wrapper  {
+    margin: 0 auto;
+}
+
+.upbutton {
+    width: 300px;
+    margin-bottom: 120px;
+    animation: upbuttonn 2s;
+    position: relative;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0px;
+    margin: 0px;
+    top: 60px;
+    left: -80px;
+    animation: square 3s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes square {
+    0% {
+        top: 60px;
+        left: -80px;
+        background-color: blue;
+        transform: rotate(180deg);
+        border-radius: 0%;
+    }
+    13% {
+        border-radius: 50%;
+    }
+    25% {
+        top: -80px;
+        left: -80px;
+        background-color: red;
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+    38% {
+        border-radius: 50%;
+    }
+    50% {
+        top: -80px;
+        left: 320px;
+        background-color: blue;
+        transform: rotate(520deg);
+        border-radius: 0%;
+    }
+    63% {
+        border-radius: 50%;
+    }
+    75% {
+        top: 60px;
+        left: 320px;
+        background-color:  red;
+        transform: rotate(700deg);
+        border-radius: 0%;
+    }
+    88% {
+        border-radius: 50%;
+    }
+    100% {
+        top: 60px;
+        left: -80px;
+        background-color:  blue;
+        transform: rotate(880deg);
+        border-radius: 0%;
+    }
+}
+
+/* upbutton styles end */
