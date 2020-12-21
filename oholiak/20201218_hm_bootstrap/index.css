@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+	background-image: url(./img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;  
+}
+
+  .xyz-container {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+}
+
+  .xyz-subtitle, .xyz-title, .xyz-description {
+	  text-align: center;
+	  margin: 15px;
+}
+
+.xyz-subtitle, .xyz-description {
+	font-size: 24px;
+	opacity: 0.5;
+	text-align: center;
+}
+
+.xyz-title {
+	font-size: 36px;
+	color: white;
+}
+
+.xyz-card-img {
+	height: 220px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.xyz-card-img img {
+	height: inherit;
+	width: auto;
+}
+
+.xyz-content h3 {
+	font-size: 24px;
+	color: white;
+	padding-top: 20px;
+}
+
+.xyz-content p {
+	font-size: 14px;
+	opacity: 0.5;
+	padding: 15px 15px 15px 0;
+	letter-spacing: 2px;
+	line-height: 25px;
+}
