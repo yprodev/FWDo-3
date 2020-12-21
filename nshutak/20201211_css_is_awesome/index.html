@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Shutak's CSS Is Awesome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="cardPicture">
+            <div class="cardContainer">
+                <img src="csspicture.png" alt="Words Css is Awesome">  
+                <div class="cardTitle">
+                    <h3>Card title</h3> 
+                    <p>Some quick example. Css is awesome. <br>
+                    I like it very much.  Some quick example.<br>
+                    Css is awesome. I like it very much.
+                    </p>
+                    <div class="buttons">
+                        <button class="buttonOne">Left</button>
+                        <button class="buttonTwo">Middle</button>
+                        <button class="buttonThree">Right</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="postForm">
+            <h2>Додати пост на сторінку</h2>
+            <form action="./formResult.html" method="GET">
+                <label for="firstName">Введіть ім'я</label> <br>
+                <input type="text" id="firstName" name="firstName" value="Nadia" required> <br>
+                <p>Вкажіть, як інші користувачі можуть до вас звертатися.</p>
+
+                <label for="textArea">Поділіться своїми думками</label> <br>
+                <textarea id="textArea" name="textArea" cols="20" rows="4"></textarea> <br>
+                <input type="checkbox" name="advertising" id="advertising" value="yesAdvertising">
+                <label for="advertising">Ви згідні отримувати нашу надокучливу рекламу щоденно.</label>  <br> 
+                <button>Submit</button> 
+            </form>
+        </section>
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>First</td>
+                        <td>Last</td>
+                        <td>Handle</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Tornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
