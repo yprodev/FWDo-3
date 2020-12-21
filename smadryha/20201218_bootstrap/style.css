@@ -8,7 +8,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 50px;
     height: 100vh;
     font-family: Georgia;
 }
@@ -20,13 +20,13 @@ body {
 
 .subtitle {
     font-size: 20px;
-    color: rgba(45, 25, 136, 0.897);;
+    color: rgba(45, 25, 136, 0.897);
+    ;
 }
 
 .title {
     font-size: 38px;
-    color:rgba(18, 5, 77, 0.829);
-
+    color: rgba(18, 5, 77, 0.829);
 }
 
 .description {
