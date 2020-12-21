@@ -1,0 +1,27 @@
+body {
+    background-image: url(нг.jpg);
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img {
+    border-radius: 50px;
+    position: unset;
+}
+
+p {
+    color:blanchedalmond
+}
+
+h3,
+h2,
+h1{
+    color: blanchedalmond;
+}
+
+h2,h1 {
+text-align: center;
+}
