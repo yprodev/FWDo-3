@@ -41,6 +41,65 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.col-lg-6 {
-    background-color: wheat;
+
+
+
+body {
+	background-image: url(./img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;  
+}
+
+  .xyz-container {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+}
+
+  .xyz-subtitle, .xyz-title, .xyz-description {
+	  text-align: center;
+	  margin: 15px;
+}
+
+.xyz-subtitle, .xyz-description {
+	font-size: 24px;
+	opacity: 0.5;
+	text-align: center;
+}
+
+.xyz-title {
+	font-size: 36px;
+	color: white;
+}
+
+.xyz-card-img {
+	height: 220px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.xyz-card-img img {
+	height: inherit;
+	width: auto;
+}
+
+.xyz-content h3 {
+	font-size: 24px;
+	color: white;
+	padding-top: 20px;
+}
+
+.xyz-content p {
+	font-size: 14px;
+	opacity: 0.5;
+	padding: 15px 15px 15px 0;
+	letter-spacing: 2px;
+	line-height: 25px;
 }
