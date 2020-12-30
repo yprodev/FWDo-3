@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Health Care</title>
+</head>
+<body>
+    <script>
+        let testQuestion = confirm("Ви повнолітні?");
+        let summury = 0;
+        let answer;
+        if (testQuestion) {
+            answer = confirm("Вживаєте алкоголь?");
+                if (answer == true) {
+                    summury += 0.1;
+                }
+            answer = confirm("Курите?");
+                if (answer == true) {
+                    summury += 0.2;
+                }
+            answer = confirm("Займаєтесь спортом?");
+                if (answer == true) {
+                    summury -= 0.4; 
+                }
+            answer = prompt("Скільки вам років?");
+                if (answer>30, answer<=59) {
+                    summury += 0.1;
+                }
+                if (answer>60) {
+                    window.alert("Нажаль, немає страхових продуктів для вас");
+                }
+                if (answer<=20) {
+                    window.alert("Вітаємо! Ви перший студент, який має гроші на страхування!");
+                }
+        window.alert ("Твій тариф: " + (100*summury) / 100);
+        }
+
+        else {
+            let age = prompt("Cкільки вам років");
+                if (age<10) {
+                    alert("Покличте батьків");
+                } else if (age>10, age<18){
+                    alert("Ще рано");
+                }
+        }
+    </script>
+
+</body>
+</html>

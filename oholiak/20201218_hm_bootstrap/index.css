@@ -57,7 +57,7 @@ body {
 }
 
   .xyz-container {
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -88,6 +88,7 @@ body {
 .xyz-card-img img {
 	height: inherit;
 	width: auto;
+	
 }
 
 .xyz-content h3 {
@@ -102,4 +103,9 @@ body {
 	padding: 15px 15px 15px 0;
 	letter-spacing: 2px;
 	line-height: 25px;
+}
+
+.col-md-3 h3:hover {
+	text-shadow: 2px 2px 5px white;
+	cursor: pointer;
 }
