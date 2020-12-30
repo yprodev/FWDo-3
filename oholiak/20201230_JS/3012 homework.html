@@ -2,47 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Care</title>
 </head>
 <body>
     <script>
-        let testQuestion = confirm("Ви повнолітні?");
-        let summury = 0;
         let answer;
-        if (testQuestion) {
-            answer = confirm("Вживаєте алкоголь?");
-                if (answer == true) {
-                    summury += 0.1;
-                }
-            answer = confirm("Курите?");
-                if (answer == true) {
-                    summury += 0.2;
-                }
-            answer = confirm("Займаєтесь спортом?");
-                if (answer == true) {
-                    summury -= 0.4; 
-                }
-            answer = prompt("Скільки вам років?");
-                if (answer>30, answer<=59) {
-                    summury += 0.1;
-                }
-                if (answer>60) {
-                    window.alert("Нажаль, немає страхових продуктів для вас");
-                }
-                if (answer<=20) {
+        let summary = 0;
+
+        answer = window.confirm("Ви повнолітні?");
+        
+        if (answer) {
+            answer = window.confirm("Вживаєте алкоголь?");
+            if (answer) {
+                summary += 0.1;
+            }
+
+            answer = window.confirm("Курите?");
+            if (answer) {
+                summary += 0.2;
+            }
+
+            answer = window.confirm("Займаєтесь спортом?");
+            if (answer) {
+                summary -= 0.4; 
+            }
+
+            answer = window.prompt("Скільки вам років?");
+            if (answer > 30 && answer <= 59) {
+                summary += 0.1;
+            }
+
+            if (answer > 60) {
+                window.alert("Нажаль, немає страхових продуктів для вас");
+            }
+            else {
+                if (answer <= 20) {
                     window.alert("Вітаємо! Ви перший студент, який має гроші на страхування!");
                 }
-        window.alert ("Твій тариф: " + (100*summury) / 100);
-        }
 
+                window.alert("Ваш тариф: " + Math.round(100 * summary) / 100);
+            }
+        }
         else {
-            let age = prompt("Cкільки вам років");
-                if (age<10) {
-                    alert("Покличте батьків");
-                } else if (age>10, age<18){
-                    alert("Ще рано");
-                }
+            answer = window.prompt("Cкільки вам років?");
+            if (answer < 10) {
+                window.alert("Покличте батьків");
+            } 
+            else if (answer < 18) {
+                window.alert("Ще рано");
+            }
+            else {
+                window.alert("Ви ж повнолітні. Спробуйте ще раз");
+            }
         }
     </script>
 
