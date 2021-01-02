@@ -25,7 +25,7 @@ if (adult) {
     }
     let yourTariff;
     if (yourTariff = old <= 60) {
-        alert ('Ваш тариф ' + [adult + smoke + sport + old]);
+        alert ('Ваш тариф ' + [alcohol + smoke + sport + old]);
     }
 } else {
     let ageChild = prompt('Скільки Вам років?');
