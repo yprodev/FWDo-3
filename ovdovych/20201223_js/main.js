@@ -3,7 +3,7 @@ let adult = confirm('Вам виповнилось 18 років?');
 if (adult) {
     let alcohol = confirm('Чи вживаєте Ви алкоголь?');
     if (alcohol) {
-        console.log(adult + 0.1);
+        console.log(alcohol + 0.1);
     }
     let smoke = confirm('Ви курите?');
     if (smoke) {
