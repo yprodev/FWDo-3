@@ -1,37 +1,44 @@
 let adult = confirm('Вам виповнилось 18 років?');
+let taryf = 0.3;
 
 if (adult) {
-    let alcohol = confirm('Чи вживаєте Ви алкоголь?');
-    if (alcohol) {
-        console.log(alcohol + 0.1);
+    let isAlcohol = confirm('Чи вживаєте Ви алкоголь?');
+    if (isAlcohol) {
+        taryf = taryf + 0.1
+        console.log(taryf);
     }
     let smoke = confirm('Ви курите?');
     if (smoke) {
-        console.log(smoke + 0.2);
+        taryf = taryf + 0.2
+        console.log(taryf);
+
     }
     let sport = confirm('Ви займаєтесь спортом?');
     if (sport) {
-        console.log(sport - 0.4);
+        taryf = taryf - 0.4
+        console.log(taryf);
     }
-    let old = prompt('Скільки Вам років?');
+    let old = +prompt('Скільки Вам років?');
     if (old >= 30) {
-        console.log(old + 0.1);
-    } 
+        taryf = taryf + 0.1
+        console.log(taryf);
+    }
     if (old >= 60) {
-        alert ('На жаль, ми немаємо страхових продуктів для Вас')
+        alert('На жаль, ми немаємо страхових продуктів для Вас')
     }
     if (old <= 20) {
-        alert ('Вітаємо!!! Ви перший студент, який має кошти на страхування!')
+
+        alert('Вітаємо!!! Ви перший студент, який має кошти на страхування!')
     }
     let yourTariff;
-    if (yourTariff = old <= 60) {
-        alert ('Ваш тариф ' + [alcohol + smoke + sport + old]);
+    if (old <= 60) {
+        alert('Ваш тариф ' + taryf);
     }
 } else {
-    let ageChild = prompt('Скільки Вам років?');
+    let ageChild = +prompt('Скільки Вам років?');
     if (ageChild < 10) {
-        alert ('Покличте своїх батьків!');
-    } else if (ageChild = 10-17) {
-        alert ('Дочекайтеся повноліття для перегляду інформації на цьому сайті...');
+        alert('Покличте своїх батьків!');
+    } else if (ageChild > 10 && ageChild <= 17) {
+        alert('Дочекайтеся повноліття для перегляду інформації на цьому сайті...');
     }
 }
