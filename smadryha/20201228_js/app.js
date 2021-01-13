@@ -26,7 +26,7 @@ if (result) {
 
     }
     let fourthQuestion = prompt("How old are you?");
-    if (fourthQuestion > 30 ) {
+    if (59 > fourthQuestion && fourthQuestion > 30 ) {
         tariff4 = tariff3 + 0.3;
         alert('Your tariff ' + tariff4)
     }
@@ -42,7 +42,7 @@ if (result) {
     if (anotherQuestion < 10) {
         alert('Call the parents')
     }
-    if (anotherQuestion > 10. < 18) {
+    if (18 > anotherQuestion && anotherQuestion > 10) {
         alert('Write to us')
 
     }
