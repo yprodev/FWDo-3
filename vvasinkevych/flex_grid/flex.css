@@ -1,0 +1,91 @@
+/* Common Styles */
+
+.content, .content1, .content2 {
+  color: #fff;
+  font: 100 24px/100px sans-serif;
+  height: 150px;
+  text-align: center;
+}
+
+.content div, .content1 div, .content2 div {
+  height: 50%;
+  width: 50%;
+}
+
+.red {
+  background: orangered;
+}
+
+.green {
+  background: yellowgreen;
+}
+
+.blue {
+  background: steelblue;
+}
+
+/* Flexbox Styles */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+/* GROW - SHRINK */
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.box {
+  flex-grow: 1;
+  border: 3px solid rgba(0, 0, 0, .2);
+}
+
+.box1 {
+  flex-grow: 2;
+  border: 3px solid rgba(0, 0, 0, .2);
+}
+
+.item {
+  width: 100px !important;
+  border: 1px solid red;
+  height: 100px;
+}
+
+body {
+  background-color: green;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: black;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content div, .content1 div, .content2 div {
+    /* height: 50%; */
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+}
