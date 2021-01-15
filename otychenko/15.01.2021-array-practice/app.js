@@ -1,10 +1,10 @@
 const users = [
-  { id: "1", name: 'John', score: 10 },
-  { id: "2", name: 'Pete', score: 5 },
-  { id: "3", name: 'Mary', score: 20 },
-  { id: "4", name: 'Mary', score: 15 },
-  { id: "5", name: 'Mary', score: 15 },
-  { id: "6", name: 'Mary', score: 13 },
+  { id: "id1", name: 'John', score: 10 },
+  { id: "id2", name: 'Pete', score: 5 },
+  { id: "id3", name: 'Mary', score: 20 },
+  { id: "id4", name: 'Mary', score: 15 },
+  { id: "id5", name: 'Mary', score: 15 },
+  { id: "id6", name: 'Mary', score: 13 },
 ];
 
 const admins = [
@@ -23,8 +23,43 @@ const extraScoreForUser = {
 
 
 // tasks
-// 1. filter users with score less than  11
+// 1. filter users with score less than  14
+
+//    1
+
+const result1 = users.filter(user => user.score < 14);
+  console.log(result1);
+
+//    2
+
+  const result11 = (arr) => {
+      const result11Arr = [];
+      for (let i = 0; i<arr.length; i++) {
+          if (arr[i].score < 14) {
+            result11Arr.push(arr[i])
+          }
+      }
+      return result11Arr;
+  }
+  
+console.log(result11(users)); 
+
+//    3
+
+const result12 = (arr) => {
+  const result12Arr = [];
+  for (let score of arr) {
+    if (score.score < 14)
+    result12Arr.push(score)
+  }
+  return result12Arr;
+}
+
+console.log(result12(users)); 
+
 // 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10ß }
+
+
 
 // 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },
 

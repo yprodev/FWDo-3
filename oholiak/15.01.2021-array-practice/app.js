@@ -1,10 +1,10 @@
 const users = [
-  { id: "1", name: 'John', score: 10 },
-  { id: "2", name: 'Pete', score: 5 },
-  { id: "3", name: 'Mary', score: 20 },
-  { id: "4", name: 'Mary', score: 15 },
-  { id: "5", name: 'Mary', score: 15 },
-  { id: "6", name: 'Mary', score: 13 },
+  { id: "id1", name: 'John', score: 10 },
+  { id: "id2", name: 'Pete', score: 5 },
+  { id: "id3", name: 'Mary', score: 20 },
+  { id: "id4", name: 'Mary', score: 15 },
+  { id: "id5", name: 'Mary', score: 15 },
+  { id: "id6", name: 'Mary', score: 13 },
 ];
 
 const admins = [
@@ -13,8 +13,27 @@ const admins = [
   { id: "id3", isAdmin: false },
   { id: "id4", isAdmin: true },
   { id: "id5", isAdmin: false },
-  { id: "id6", isAdmin: true },
+  { id: "id6", isAdmin: false },
 ]
+const admins = [
+  { id: "id2", isAdmin: true, name: 'John', score: 10 }
+  { id: "id2", isAdmin: true },
+  { id: "id3", isAdmin: false },
+  { id: "id4", isAdmin: true },
+  { id: "id5", isAdmin: false },
+  { id: "id6", isAdmin: false },
+]
+
+user = { id: "id2", isAdmin: true },
+userenchanced = { id: "id6", name: 'Mary', score: 13 },
+
+
+Object.assign(user, userenchanced)
+
+{
+  id: user.id
+  name: userenchanced.name
+}
 
 const extraScoreForUser = {
   id: 'id5',
@@ -24,7 +43,7 @@ const extraScoreForUser = {
 
 // tasks
 // 1. filter users with score less than  11
-// 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10ß }
+// 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10 }
 
 // 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },
 
@@ -34,9 +53,6 @@ const extraScoreForUser = {
 //   id2: { id: "2", isAdmin: true },
 //   id3: { id: "3", isAdmin: false },
 // }
-
-
-// 5. create array from this object
 
 const weather = {
   days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],

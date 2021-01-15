@@ -7,6 +7,28 @@ const users = [
   { id: "6", name: 'Mary', score: 13 },
 ];
 
+let results = [];
+
+for (let i=0; i<users.length; i++){
+  if (users.score < 14) {
+    results.push(users[i]);
+  }
+}
+console.log("Result is:", results);
+
+
+
+
+
+//task2
+const users = [
+  { id: "id1", name: 'John', score: 10 },
+  { id: "id2", name: 'Pete', score: 5 },
+  { id: "id3", name: 'Mary', score: 20 },
+  { id: "id4", name: 'Mary', score: 15 },
+  { id: "id5", name: 'Mary', score: 15 },
+  { id: "id6", name: 'Mary', score: 13 },
+];
 const admins = [
   { id: "id1", isAdmin: true },
   { id: "id2", isAdmin: true },
@@ -16,10 +38,58 @@ const admins = [
   { id: "id6", isAdmin: true },
 ]
 
+
+//first sposib
+const arr = [];
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+  console.log(user);
+  const admin = admins.find((elem) => user.id === elem.id)
+  const mergedObj = Object.assign(user, admin);
+  arr.push(mergedObj);
+
+}
+console.log(arr);
+
+//second sposib more good
+const newArr = users.map(user => {
+  const admin = admins.find(admin => {
+    return admin.id === user.id
+  })
+  return Object.assign(admin, user);
+})
+
+console.log(newArr);
+
+
+
+
+
+
+
+//task3
+
 const extraScoreForUser = {
   id: 'id5',
   extraScope: 4
 }
+
+//solution task3
+const newEra = users.map((user) => {
+  if (user.id === extraScoreForUser.id) {
+    return {
+      ...user,
+      score: user.score + extraScoreForUser.extraScope
+    }
+  } else {
+    return user
+  }
+}
+
+)
+console.log(newEra);
+
+
 
 
 // tasks

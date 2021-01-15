@@ -1,3 +1,7 @@
 {
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true
 }

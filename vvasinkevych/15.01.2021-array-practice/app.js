@@ -23,7 +23,8 @@ const extraScoreForUser = {
 
 
 // tasks
-// 1. filter users with score less than  11
+// 1. filter users with score less than  14
+
 // 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10ß }
 
 // 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },

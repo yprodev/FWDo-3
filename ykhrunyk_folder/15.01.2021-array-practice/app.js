@@ -1,10 +1,10 @@
 const users = [
-  { id: "1", name: 'John', score: 10 },
-  { id: "2", name: 'Pete', score: 5 },
-  { id: "3", name: 'Mary', score: 20 },
-  { id: "4", name: 'Mary', score: 15 },
-  { id: "5", name: 'Mary', score: 15 },
-  { id: "6", name: 'Mary', score: 13 },
+  { id: "id1", name: 'John', score: 10 },
+  { id: "id6", name: 'Pete', score: 5 },
+  { id: "id3", name: 'Mary', score: 20 },
+  { id: "id4", name: 'Mary', score: 15 },
+  { id: "id5", name: 'Mary', score: 15 },
+  { id: "id2", name: 'Mary', score: 13 },
 ];
 
 const admins = [
@@ -23,10 +23,43 @@ const extraScoreForUser = {
 
 
 // tasks
-// 1. filter users with score less than  11
+// 1. filter users with score more than  14
+//   const filteredUsers = [];
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].score >= 14) {
+//         filteredUsers.push(user[i]);
+//     }
+//   }
 // 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10ß }
+const arr = [];
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+  console.log(user);
+  const admin = admins.find((elem) => user.id === elem.id)
+  const mergedObj = Object.assign(user, admin);
+  arr.push(mergedObj);
+
+}
+console.log(arr);
+
+
+
 
 // 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },
+
+const newEra = users.map((user) => {
+  if (user.id === extraScoreForUser.id) {
+    return {
+      ...user,
+      score: user.score + extraScoreForUser.extraScope
+    }
+  } else {
+    return user
+  }
+}
+
+)
+
 
 // 4. create object like from array:
 // const result = {
