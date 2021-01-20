@@ -63,27 +63,44 @@ const extraScoreForUser = {
 
 // 4. create object like from array:
 // const result = {
-//   id1: { id: "1", isAdmin: true },
-//   id2: { id: "2", isAdmin: true },
-//   id3: { id: "3", isAdmin: false },
-// }
-// const result = {};
-
-// for (let i = 0; i < users.length; i++) {
-//   const user = users[i];
-//   result[`id${i}`] = user;
+//   id1: { id: "id1", isAdmin: true },
+//   id2: { id: "id2", isAdmin: true },
+//   id3: { id: "id3", isAdmin: false },
 // }
 
 
+const result = {};
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+  result[user.id] = user;
+}
 
+const a = users.reduce((result, user, index) => { 
+  return Object.assign(result, { [user.id]: user})
+}, {})
+
+const b = users.reduce((result, user, index) => (
+  {
+    ...result,
+    [user.id]: user
+  }
+), {})
+
+const multiply = [1, 2, 3, 4, 5, 6, 7].reduce((result, curEll) => {
+  return result * curEll
+}, 1)
+
+console.log(multiply);
 
 // 5. create array from this object
 
 const weather = {
-  days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  temperature: ['12', '13', '23', '24', '18', '17', '19'],
-  wind: ['6', '2', '4', '5', '7', '23', '1'],
+  days: [       'Sunday',  'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+  temperature: ['12',      '13',      '23', '24', '18', '17', '19'],
+  wind: [       '6',       '2',        '4', '5', '7', '23', '1'],
 }
+console.log(weather.days);
+
 
 // result has to be 
 // newWeather = [{ day: "Sunday", temperature: "12", wind: 3} ...]
@@ -101,3 +118,25 @@ for (let i = 0; i < weather.days.length; i++) {
   newWeather.push(newObjWeather);
 }
 
+const weatherResult = weather.days.reduce((newWeather, _, i) => {
+  const weatherDay = {
+    day: weather.days[i],
+    temp: weather.temperature[i],
+    wind: weather.wind[i],
+  }
+
+  // newWeather.push(weatherDay) // variant 1
+  // return newWeather
+
+  return [...newWeather, weatherDay]
+}, [])
+
+const weatherResultMap = weather.days.map((el, i) => (
+  {
+    day: weather.days[i],
+    temp: weather.temperature[i],
+    wind: weather.wind[i],
+  })
+)
+
+console.dir(weatherResultMap)
