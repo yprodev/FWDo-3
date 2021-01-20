@@ -31,34 +31,34 @@ const extraScoreForUser = {
 //     }
 //   }
 // 2. create new array that has all properties eg { id: "1", isAdmin: true, name: 'John', score: 10ß }
-const arr = [];
-for (let i = 0; i < users.length; i++) {
-  const user = users[i];
-  console.log(user);
-  const admin = admins.find((elem) => user.id === elem.id)
-  const mergedObj = Object.assign(user, admin);
-  arr.push(mergedObj);
+// const arr = [];
+// for (let i = 0; i < users.length; i++) {
+//   const user = users[i];
+//   console.log(user);
+//   const admin = admins.find((elem) => user.id === elem.id)
+//   const mergedObj = Object.assign(user, admin);
+//   arr.push(mergedObj);
 
-}
-console.log(arr);
-
-
+// }
+// console.log(arr);
 
 
-// 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },
 
-const newEra = users.map((user) => {
-  if (user.id === extraScoreForUser.id) {
-    return {
-      ...user,
-      score: user.score + extraScoreForUser.extraScope
-    }
-  } else {
-    return user
-  }
-}
 
-)
+// // 3. create new array with that has where extraScoreForUser result should be { id: "5", name: 'Mary', score: 15+ },
+
+// const newEra = users.map((user) => {
+//   if (user.id === extraScoreForUser.id) {
+//     return {
+//       ...user,
+//       score: user.score + extraScoreForUser.extraScope
+//     }
+//   } else {
+//     return user
+//   }
+// }
+
+// )
 
 
 // 4. create object like from array:
@@ -67,6 +67,14 @@ const newEra = users.map((user) => {
 //   id2: { id: "2", isAdmin: true },
 //   id3: { id: "3", isAdmin: false },
 // }
+// const result = {};
+
+// for (let i = 0; i < users.length; i++) {
+//   const user = users[i];
+//   result[`id${i}`] = user;
+// }
+
+
 
 
 // 5. create array from this object
@@ -79,5 +87,17 @@ const weather = {
 
 // result has to be 
 // newWeather = [{ day: "Sunday", temperature: "12", wind: 3} ...]
+const newWeather = [];
 
+for (let i = 0; i < weather.days.length; i++) {
+  const dayWeather = weather.days[i];
+  const temWeather = weather.temperature[i];
+  const windWeather = weather.wind[i];
+  const newObjWeather = {
+    day: `${dayWeather}`,
+    temp: `${temWeather}`,
+    wind: `${windWeather}`
+  };
+  newWeather.push(newObjWeather);
+}
 
