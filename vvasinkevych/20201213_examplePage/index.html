@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./cssKit/style1.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <header class="one"></header>
+    </div>
+    <header id="header-test">
+        <div class="card">
+            <div class="picture">
+                <img src="./css.png" alt="css in awesome picture">
+            </div>
+            <div class="cardContent">
+                <h6 class="cardTitle">Card title</h6>
+                <p class="cardText">Some quick exemaple text to build on the card title and make up the bulk of the
+                    card`s content.</p>
+            </div>
+            <div class="cardButtons">
+                <button type="submit" class="leftButton"><span>Left</span></button>
+                <button type="submit" class="middleButton"><span>Middle</span></button>
+                <button type="submit" class="rightButton btn-primary btn-disabled" data-about="Elephant" data-user-location="street"><span>Right</span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form">
+            <div class="formTitleArea">
+                <h3 class="formTitle">Add post to your page</h3>
+                <p class="formName">Enter your name</p>
+                <input type="text" class="formInput">
+                <p class="formContacts">How other authors can call you</p>
+            </div>
+            <div class="formThougthsArea">
+                <p class="formThougthsTitle">Share your thougths</p>
+                <textarea class="formThougths" maxlength="300"></textarea>
+                <div class="checkboxTest">
+                    <input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox">
+                    <label for="checkboxG3" class="css-label">Do you agree to recive out annoying ads?</label>
+                </div>
+                <button type="submit" class="formButton">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-row="1">
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr data-row="2">
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr data-row="3">
+                    <td>3</td>
+                    <td>Larry the Bird</td>
+                    <td></td>
+                    <td>@twiter</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+header {
+    margin: 15px;
+    margin-bottom: 0px;
+    border: 1px solid rgba(122, 122, 122, 0.7);
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(182, 182, 182, 0.8);
+    border-radius: 4px;
+    width: 370px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px rgb(131, 131, 131);
+}
+
+img {
+    width: 100%;
+}
+
+.cardTitle {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.cardContent {
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.cardButtons {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+
+.leftButton {
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 50px;
+    box-sizing: initial;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    /* display: block; */
+    /* float: left; */
+}
+
+.middleButton {
+    background-color: rgb(255, 208, 0);
+    color: black;
+    width: 100px;
+    height: 50px;
+    box-sizing: initial;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    /* display: block; */
+    /* float: left; */
+}
+
+.rightButton {
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 50px;
+    box-sizing: initial;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    /* display: block; */
+    /* float: left; */
+}
+
+.leftButton:hover {
+    background-color: white;
+    border: 4px solid red;
+    color: black;
+    box-sizing: border-box;
+}
+
+.middleButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.middleButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.middleButton:hover span {
+    padding-right: 25px;
+}
+
+.middleButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* .button {
+    display: inline-block;
+    /* border-radius: 4px; */
+
+/* background-color: #f4511e; */
+
+/* border: none; */
+
+/* color: #FFFFFF; */
+
+/* text-align: center; */
+
+/* font-size: 28px; */
+
+/* padding: 20px; */
+
+/* width: 200px; */
+
+/* transition: all 0.5s; */
+
+/* cursor: pointer; */
+
+/* margin: 5px; */
+
+/* } */
+
+/*  */
+
+/* .button span { */
+
+/* cursor: pointer; */
+
+/* display: inline-block; */
+
+/* position: relative; */
+
+/* transition: 0.5s; */
+
+/* } */
+
+/* .button span:after { */
+
+/* content: '\00bb'; */
+
+/* position: absolute; */
+
+/* opacity: 0; */
+
+/* top: 0; */
+
+/* right: -20px; */
+
+/* transition: 0.5s; */
+
+/* } */
+
+/* .button:hover span { */
+
+/* padding-right: 25px; */
+
+/* } */
+
+/* .button:hover span:after { */
+
+/* opacity: 1; */
+
+/* right: 0; */
+
+/* } */
+
+main {
+    margin: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid rgba(122, 122, 122, 0.7);
+    padding-bottom: 50px;
+}
+
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 50px;
+}
+
+.formTitleArea {
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+.formTitle {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.formName {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.formInput {
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid rgba(126, 126, 126, 0.5);
+    margin-bottom: 5px;
+}
+
+.formContacts {
+    font-size: 13px;
+    opacity: 0.9;
+    color: rgb(61, 61, 61);
+}
+
+.formThougthsArea {
+    padding-right: 40px;
+}
+
+.formThougthsTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.formThougths {
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+    border: 1px solid rgba(126, 126, 126, 0.5);
+    font-size: 17px;
+}
+
+.checkboxTest {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.formButton {
+    background-color: rgb(35, 130, 255);
+    color: white;
+    width: 100px;
+    height: 40px;
+    box-sizing: initial;
+    border-radius: 4px;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    display: block;
+    float: left;
+}
+
+footer {
+    margin: 15px;
+    margin-top: 0px;
+    border: 1px solid rgba(122, 122, 122, 0.7);
+    padding: 60px 100px 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+table {
+    width: 100%;
+    font-size: 30px;
+    line-height: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(230, 230, 230, 0.795);
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+td {
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+tbody tr:hover {
+    background-color: rgba(100, 100, 100 , 0.5);
+    color: white;
+    box-shadow: 5px 5px 10px rgb(66, 92, 51);
+}
