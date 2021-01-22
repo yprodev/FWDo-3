@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Forms</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<section class="wrapper">
+		<div class="container">
+			<p class="myParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis mollis iaculis. Aenean ornare ultricies rutrum. In fermentum velit vestibulum leo viverra auctor. Nullam sit amet est ac est aliquet aliquam sed vitae lacus. Praesent nibh lectus, maximus eu consequat quis, pellentesque quis dolor. </p>
+		</div>
+	</section>
+
+
+	<script>
+		fetch('http://localhost:3000/posts')
+			.then(res => res.json())
+			.then(data => {
+				console.log('data', data)
+			})
+	</script>
+</body>
+</html>
