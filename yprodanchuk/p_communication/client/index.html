@@ -17,12 +17,86 @@
 		</div>
 	</section>
 
+	<div id="postsContainer"></div>
+
+
 
 	<script>
 		fetch('http://localhost:3000/posts')
 			.then(res => res.json())
 			.then(data => {
-				console.log('data', data)
+				const records = data.map((record, idx) => {
+					const recordParent = document.createElement("section");
+					recordParent.id = "record-" + idx;
+
+					const authorElem = document.createElement("div");
+					authorElem.classList.add("author-name");
+					authorElem.textContent = record.author;
+
+					const dateElem = document.createElement("span");
+					dateElem.classList.add("article-date");
+					dateElem.textContent = record.date;
+
+					const likesElem = document.createElement("span");
+					likesElem.classList.add("article-likes");
+					likesElem.textContent = record.likes;
+
+					const titleElem = document.createElement("h1");
+					titleElem.classList.add("article-title");
+					titleElem.textContent = record.title;
+
+					const contentElem = document.createElement("p");
+					contentElem.classList.add("article-content");
+					contentElem.textContent = record.content;
+
+					recordParent.appendChild(authorElem);
+					recordParent.appendChild(titleElem);
+					recordParent.appendChild(likesElem);
+					recordParent.appendChild(dateElem);
+					recordParent.appendChild(contentElem);
+
+					return recordParent;
+				})
+
+				console.log('data', data);
+				console.log('records', records);
+
+				const parentElem = document.getElementById("postsContainer");
+				for (i = 0; i < records.length; i++) {
+					parentElem.appendChild(records[i]);
+				}
+
+				// const authorElem = document.createElement("div");
+				// authorElem.classList.add("author-name");
+				// authorElem.textContent = data[0].author;
+
+				// const dateElem = document.createElement("span");
+				// dateElem.classList.add("article-date");
+				// dateElem.textContent = data[0].date;
+
+				// const likesElem = document.createElement("span");
+				// likesElem.classList.add("article-likes");
+				// likesElem.textContent = data[0].likes;
+
+				// const titleElem = document.createElement("h1");
+				// titleElem.classList.add("article-title");
+				// titleElem.textContent = data[0].title;
+
+				// const contentElem = document.createElement("p");
+				// contentElem.classList.add("article-content");
+				// contentElem.textContent = data[0].content;
+
+
+				// parentElem.appendChild(authorElem);
+				// parentElem.appendChild(titleElem);
+				// parentElem.appendChild(likesElem);
+				// parentElem.appendChild(dateElem);
+				// parentElem.appendChild(contentElem);
+
+
+				// console.log('author element: ', authorElem);
+				// console.log('parentElem', parentElem);
+
 			})
 	</script>
 </body>
