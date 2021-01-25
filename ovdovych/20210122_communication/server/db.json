@@ -1,0 +1,39 @@
+{
+	"posts": [
+		{
+			"author": "Steve Anderson",
+			"date": "2020-12-14",
+			"likes": 34,
+			"title": "How to get the job in IT sphere?",
+			"content": "It's easy. Work hard or die trying :)"
+		},
+		{
+			"author": "Steve Jobs",
+			"date": "2017-04-18",
+			"likes": 28,
+			"title": "Would your former employer talk about your strengths and weaknesses if I asked him to?",
+			"content": "Of course, my former employer will answer all the questions."
+		},
+		{
+			"author": "James Metue",
+			"date": "2015-06-01",
+			"likes": 101,
+			"title": "Thank you for coming, now the interview is in your hands.",
+			"content": "Thank you for the invitation, I will be happy to be part of your team."
+		},
+		{
+			"author": "Nataly Jamerson",
+			"date": "2021-01-16",
+			"likes": 56,
+			"title": "How did you prepare for this interview?",
+			"content": "I was looking for all the information, trying to learn everything you need for this project"
+		},
+		{
+			"author": "Jennifer Armstrong",
+			"date": "2012-07-09",
+			"likes": 95,
+			"title": "What do you know about us?",
+			"content": "I know that you are developing software for outsourcing companies."
+		}
+	]
+}
