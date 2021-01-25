@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Forms</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<section class="wrapper">
+		<div class="container">
+			<p class="myParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis mollis iaculis. Aenean ornare ultricies rutrum. In fermentum velit vestibulum leo viverra auctor. Nullam sit amet est ac est aliquet aliquam sed vitae lacus. Praesent nibh lectus, maximus eu consequat quis, pellentesque quis dolor. </p>
+		</div>
+	</section>
+
+	<div id="postsContainer"></div>
+
+
+
+	<script>
+		fetch('http://localhost:3000/posts')
+			.then(res => res.json())
+			.then(data => {
+				const records = data.map((record, idx) => {
+					const recordParent = document.createElement("section");
+					recordParent.id = "record-" + idx;
+
+					const authorElem = document.createElement("div");
+					authorElem.classList.add("author-name");
+					authorElem.textContent = record.author;
+
+					const dateElem = document.createElement("span");
+					dateElem.classList.add("article-date");
+					dateElem.textContent = record.date;
+
+					const likesElem = document.createElement("span");
+					likesElem.classList.add("article-likes");
+					likesElem.textContent = record.likes;
+
+					const titleElem = document.createElement("h1");
+					titleElem.classList.add("article-title");
+					titleElem.textContent = record.title;
+
+					const contentElem = document.createElement("p");
+					contentElem.classList.add("article-content");
+					contentElem.textContent = record.content;
+
+					recordParent.appendChild(authorElem);
+					recordParent.appendChild(titleElem);
+					recordParent.appendChild(likesElem);
+					recordParent.appendChild(dateElem);
+					recordParent.appendChild(contentElem);
+
+					return recordParent;
+				})
+
+				console.log('data', data);
+				console.log('records', records);
+
+				const parentElem = document.getElementById("postsContainer");
+				for (i = 0; i < records.length; i++) {
+					parentElem.appendChild(records[i]);
+				}
+
+				// const authorElem = document.createElement("div");
+				// authorElem.classList.add("author-name");
+				// authorElem.textContent = data[0].author;
+
+				// const dateElem = document.createElement("span");
+				// dateElem.classList.add("article-date");
+				// dateElem.textContent = data[0].date;
+
+				// const likesElem = document.createElement("span");
+				// likesElem.classList.add("article-likes");
+				// likesElem.textContent = data[0].likes;
+
+				// const titleElem = document.createElement("h1");
+				// titleElem.classList.add("article-title");
+				// titleElem.textContent = data[0].title;
+
+				// const contentElem = document.createElement("p");
+				// contentElem.classList.add("article-content");
+				// contentElem.textContent = data[0].content;
+
+
+				// parentElem.appendChild(authorElem);
+				// parentElem.appendChild(titleElem);
+				// parentElem.appendChild(likesElem);
+				// parentElem.appendChild(dateElem);
+				// parentElem.appendChild(contentElem);
+
+
+				// console.log('author element: ', authorElem);
+				// console.log('parentElem', parentElem);
+
+			})
+	</script>
+</body>
+</html>
