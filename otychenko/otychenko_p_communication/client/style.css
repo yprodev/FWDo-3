@@ -1,0 +1,60 @@
+body {
+    background-color: lightgrey;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+.butWrapper {
+    text-align: center;
+    transition: 0.55s;
+}
+.myParagraph {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.but {
+    border: 1px solid red;
+    width: 300px;
+}
+.but:hover {
+    box-shadow: 0px 0px 2px black;
+}
+.newBut {
+    border: 1px solid black;
+    width: 300px;
+    background-color: red;
+    color: white;
+}
+.newBut2 {
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+}
+.posts-cont > div {
+    padding-left: 30px;
+    text-align: left;
+}
+.rus-man {
+    padding-top: 50px;
+    max-width: 500px;
+    margin: auto;
+}
+.rus-man > img {
+    max-width: 100%;
+}
+.first-post {
+    background-color: rgba(165, 42, 42, 0.199);
+    color: black;
+}
+.second-post {
+    background-color: rgba(165, 42, 42, 0.39);
+    color: black;
+}
+.third-post {
+    background-color: rgba(165, 42, 42, 0.603);
+    color: black;
+}
+.fourth-post {
+    background-color: rgba(165, 42, 42, 0.801);
+    color: black;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Forms</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<section class="wrapper">
+		<div class="container">
+			<h1 class="myParagraph" id="mainTitle">Meni svarky v khati ne treba</h1>
+		</div>
+	</section>
+	<div id="butWrapper" class="butWrapper"></div>
+
+
+	<div id=postsCont class="posts-cont"></div>
+	<div class="rus-man" hidden id="rusMan"><img src="./rus-man.gif" alt=""></div>
+	<script>
+		fetch('http://localhost:3000/posts')
+			.then(res => res.json())
+			.then(data => {
+				const records = data.map((record, idx) => {
+					const recordsParent = document.createElement('div');
+					recordsParent.id = "record_" + idx;
+
+					const postAuthor = document.createElement('div');
+					postAuthor.innerHTML = `<b>${record.author}</b>`;
+
+					const postDate = document.createElement('div');
+					postDate.textContent = record.date;
+
+					const postLikes = document.createElement('div');
+					postLikes.textContent = record.likes;
+
+					const postTitle = document.createElement('h2');
+					postTitle.textContent = record.title;
+
+					const postContent = document.createElement('span');
+					postContent.textContent = record.content;
+
+					recordsParent.appendChild(postAuthor);
+					recordsParent.appendChild(postDate);
+					recordsParent.appendChild(postLikes);
+					recordsParent.appendChild(postTitle);
+					recordsParent.appendChild(postContent);
+					recordsParent.appendChild(document.createElement('hr'));
+
+					return recordsParent;
+				})
+
+				let refresh = () => {
+					window.location.reload()
+				}
+				let thirdHandleClick = () => {
+					return new Promise(function(resolve, reject) {
+						setTimeout(() => {
+							posts.hidden = true;
+							rusMan.hidden = false;
+							mainTitle.textContent = "Well done, Slavic :)"
+							butWrap.after('Opps, now you will watch this for all day. Thank\'s me for making this button for you')
+							but.textContent = 'Thank you, Oleh'
+							but.onclick = refresh;
+						}, 300)
+						resolve ;
+					}).then(function() {
+
+					})
+				};
+
+				let secHandleClick = () => {
+					return new Promise(function (resolve, reject) {
+						function func() {
+							record_3.className = "fourth-post";
+						};
+						resolve(setTimeout(func, 300))
+					}).then(function () {
+						function func() {
+							record_2.className = "third-post";
+						};
+						return (setTimeout(func, 600))
+					}).then(function () {
+						function func() {
+							record_1.className = "second-post"
+						};
+						return (setTimeout(func, 900))
+					}).then(function () {
+						function func() {
+							record_0.className = "first-post";
+							but.onclick = thirdHandleClick;
+							but.className = "newBut2";
+							but.textContent = "Don't touch this now, pls"
+						};
+						return (setTimeout(func, 1200))
+					})
+				};
+				console.log(records);
+				const posts = document.getElementById('postsCont')
+				let handleClick = () => {
+					return new Promise(function (resolve, reject) {
+						function func() {
+							posts.append(records[0]);
+							but.onclick = '';
+						};
+						resolve(setTimeout(func, 300))
+					}).then(function () {
+						function func() { posts.append(records[1]) };
+						return (setTimeout(func, 600))
+					}).then(function () {
+						function func() { posts.append(records[2]) };
+						return (setTimeout(func, 900))
+					}).then(function () {
+						function func() {
+							posts.append(records[3])
+							but.textContent = "One more time";
+							but.className = "newBut";
+							but.onclick = secHandleClick;
+						};
+						return (setTimeout(func, 1200))
+					})
+				};
+
+
+
+				const but = document.createElement('button');
+				but.textContent = "Click on this one";
+				but.className = "but";
+				const butWrap = document.getElementById("butWrapper")
+				butWrap.append(but);
+				but.onclick = handleClick;
+
+
+
+				// for (i = 0; i < records.length; i++) {
+				// 	debugger;
+				// 	setTimeout(() => {posts.append(records[i])},1000);
+				// };
+
+
+
+
+				// console.log('data', data);
+				// const posts = document.getElementById('postsCont')
+				// const postAuthor = document.createElement('div');
+				// postAuthor.textContent = data[0].author;
+				// posts.append(postAuthor);
+				// const postDate = document.createElement('div');
+				// postDate.textContent = data[0].date;
+				// posts.append(postDate);
+				// const postLikes = document.createElement('div');
+				// postLikes.textContent = data[0].likes;
+				// posts.append(postLikes);
+				// const postTitle = document.createElement('h2');
+				// postTitle.textContent = data[0].title;
+				// posts.append(postTitle);
+				// const postContent = document.createElement('span');
+				// postContent.textContent = data[0].content;
+				// posts.append(postContent);
+			})
+	</script>
+</body>
+
+</html>
