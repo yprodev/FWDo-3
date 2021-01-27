@@ -269,7 +269,6 @@ footer {
     border: 1px solid rgba(122, 122, 122, 0.7);
     padding: 60px 100px 30px 50px;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 table {
@@ -291,8 +290,25 @@ th {
 td {
     border-bottom: 1px solid rgb(160, 160, 160);
 }
+
 tbody tr:hover {
-    background-color: rgba(100, 100, 100 , 0.5);
+    background-color: rgba(100, 100, 100, 0.5);
     color: white;
     box-shadow: 5px 5px 10px rgb(66, 92, 51);
+}
+
+.table-thead {
+    outline: 1px solid black;
+}
+
+.table-tr {
+    outline: 1px solid black;
+}
+
+.table-th {
+    outline: 1px solid black;
+}
+
+.table-td {
+    outline: 1px solid black;
 }
