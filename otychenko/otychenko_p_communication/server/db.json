@@ -1,0 +1,32 @@
+{
+	"posts": [
+		{
+			"author": "Сlown",
+			"date": "Z pokon Vekov",
+			"likes": "vse",
+			"title": "Dinamicheskaya tipizatsiya luchshe staticheskoy!",
+			"content": "Chto ty tam lyapnul, kloun? Idi syuda! Ty kuda pobezhal?"
+		},
+		{
+			"author": "Muzhik",
+			"date": "2022-02-22",
+			"likes": "Infinite",
+			"title": "Ty khot' raz litso snegom umyval?",
+			"content": "Eti svoi cholki piterskiye otrostili"
+		},
+		{
+			"author": "Tot, kto manevriruyet",
+			"date": "2089-12-14",
+			"likes": 42,
+			"title": "Raz, fukh fukh fukh fukh. Zakonchili manovr, ostavlis' na meste.",
+			"content": "Nazhali na tormoz, i prosto yedite dal'she"
+		},
+		{
+			"author": "Steve Anderson",
+			"date": "2020-12-14",
+			"likes": 34,
+			"title": "How to get the job in IT sphere?",
+			"content": "It's easy. Work hard or die trying :)"
+		}
+	]
+}

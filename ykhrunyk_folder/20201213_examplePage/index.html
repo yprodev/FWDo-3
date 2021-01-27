@@ -27,6 +27,35 @@
                 <button type="submit" class="rightButton"><span>Right</span></button>
             </div>
         </div>
+        <table class="tableClass">
+            <thead class="table-thead">
+                <tr class="tableTr">
+                    <th class="table-th">#</th>
+                    <th class="table-th">Name</th>
+                    <th class="table-th">Descriprion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tableTr">
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                </tr>
+                <tr class="tableTr">
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                </tr>
+                <tr class="tableTr">
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                    <td class="table-td"></td>
+                </tr>
+            </tbody>
+        </table>
     </header>
     <main>
         <div class="form">
@@ -79,6 +108,31 @@
             </tbody>
         </table>
     </footer>
+    <script>
+        const formInp = document.querySelector('.formInput');
+        const btn = document.querySelector(".formButton");
+        const table = document.querySelector('.tableClass')
+        const formTh = document.querySelector(".formThougths")
+        table.hidden = true; 
+        let index = 0;
+        btn.onclick = (i) => {
+            index += 1;
+            const text = formInp.value;
+            const textTh = formTh.value;
+            btn.style.backgroundColor = 'black';
+            table.hidden = false; 
+            formInp.value = '';
+            formTh.value = '';
+            let newRow = table.insertRow(index);
+            let newCell1 = newRow.insertCell(0);
+            let newCell2 = newRow.insertCell(1);
+            let newCell3 = newRow.insertCell(2);
+            table.rows[index].cells[0].innerHTML = index;
+            table.rows[index].cells[1].innerHTML = text;
+            table.rows[index].cells[2].innerHTML = textTh;
+            console.log('show this')
+        }
+    </script>
 </body>
 
 </html>

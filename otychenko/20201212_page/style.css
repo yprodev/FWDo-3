@@ -18,6 +18,11 @@ body {
   color: #212529;
 }
 
+.bodyForToggle {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
 .borderdiv {
   border: 2px solid #3b3c3d;
   border-top: 1px solid #212529;
@@ -169,4 +174,16 @@ th:nth-child(n):hover {
   width: 15%;
   z-index: 1;
   margin-top: 30px;
+}
+
+.afterForm {
+  padding: 25px 0px 25px 70px;
+  margin: auto auto;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.164);
+  border: 3px solid black;
+  box-shadow: 0px 0px 5px black;
+  width: 80%;
 }
