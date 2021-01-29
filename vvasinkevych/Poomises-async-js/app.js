@@ -4,14 +4,14 @@ const api = {
   users: 'users/',
   searchUsers: 'search/users',
 }
-const baseFetchOptions = {
-  method: 'GET',
-  mode: 'cors',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/vnd.github.v3+json'
-  },
-}
+// const baseFetchOptions = {
+//   method: 'GET',
+//   mode: 'cors',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Accept': 'application/vnd.github.v3+json'
+//   },
+// }
 
 const searchBtn = document.querySelector('.findBtn')
 
@@ -24,18 +24,18 @@ async function getUsers(query ="vasinkevych") {
 
 
 
-const createTableRow = (user) => {
-  const cells = `<td>${user}</td>`
-  const row = document.createElement('tr')
-  row.innerHTML = cells
+// const createTableRow = (user) => {
+//   const cells = `<td>${user}</td>`
+//   const row = document.createElement('tr')
+//   row.innerHTML = cells
 
-  return cells;
-}
+//   return cells;
+// }
 
-function createTable() {
-  const tbody = document.createElement(tbody);
-  tbody.classList.add(tableBodyClass)
-}
+// function createTable() {
+//   const tbody = document.createElement(tbody);
+//   tbody.classList.add(tableBodyClass)
+// }
 
 async function init() {
   searchBtn.addEventListener('click', searchUsers)
