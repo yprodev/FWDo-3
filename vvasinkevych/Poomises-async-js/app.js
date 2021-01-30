@@ -23,19 +23,40 @@ async function getUsers(query ="vasinkevych") {
 }
 
 
+const getUsersRepo = async (url) => {
+  return fetch(url)
+    .then((response) => {
+      console.log(response.json())
+      return response.json();
 
-// const createTableRow = (user) => {
-//   const cells = `<td>${user}</td>`
-//   const row = document.createElement('tr')
-//   row.innerHTML = cells
+    }).then(res => {
+      console.log(res, 'skaljflaksj')
+    })
+}
 
-//   return cells;
-// }
 
-// function createTable() {
-//   const tbody = document.createElement(tbody);
-//   tbody.classList.add(tableBodyClass)
-// }
+const createTableRow = (user) => {
+  const cells = `
+  <td > <img src="${user.avatar_url}" style="height:40px" alt="" /></td>
+  <td > ${user.login}</td>
+  `
+  const row = document.createElement('tr')
+  row.setAttribute('data-url', user.repos_url)
+  row.innerHTML = cells
+  row.onclick = (e) => getUsersRepo(user.repos_url)
+  return row;
+}
+
+function createTable(users) {
+  const tbody = document.createElement('tbody');
+  tbody.classList.add(tableBodyClass)
+  users.forEach(user => {
+    const row = createTableRow(user)
+    tbody.appendChild(row)
+  })
+
+  return tbody
+}
 
 async function init() {
   searchBtn.addEventListener('click', searchUsers)
@@ -45,8 +66,13 @@ async function init() {
 
 const searchUsers = async () => {
   const input = document.querySelector('.searchUsers')
-  const users = await getUsers(input.value)
-  console.log(users, '  ==');
+  const dataFromGit = await getUsers(input.value)
+  console.log(dataFromGit, '  ==');
+
+  const bodyTable = createTable(dataFromGit.items) 
+
+  document.querySelector('table').appendChild(bodyTable)
+
 }
 
 init()
