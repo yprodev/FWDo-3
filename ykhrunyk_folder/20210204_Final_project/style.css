@@ -1,0 +1,193 @@
+body {
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Dosis;
+    height: 300vh;
+}
+
+.header-box-style {
+    background-color: rgba(255, 226, 183, 0.603);
+    /* margin-top: 0px; */
+    display: grid;
+    grid-template-columns: 100px 120px 100px 100px 100px auto;
+    grid-template-rows: 50px;
+}
+
+.logo-style {
+    height: 50px;
+    padding: 0px 30px;
+}
+
+.logo-text-style {
+    height: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-sections {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* padding: 0px 5px; */
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-bar-sections-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar-sections:hover {
+    box-shadow: 0 0 3px rgb(255, 214, 138);
+    background-color: rgb(255, 214, 138);
+    border-radius: 4px;
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: white;
+}
+
+.hw-container {
+    margin-top: 100px;
+    min-width: 600px;
+    max-width: 1700px;
+}
+
+.main-col-class {
+    margin: 100px 70px 0px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    border-radius: 10px;
+    background-color: rgba(255, 221, 177, 0.301);
+    padding: 10px;
+}
+
+.main-col-class:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.car-img-class {
+    width: 300px;
+    display: block;
+}
+
+.icons-img-class {
+    margin: auto;
+    width: 20px;
+}
+
+.about-car-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.div-for-img {
+    margin: auto;
+    height: 200px;
+}
+
+.btnClassStylePlus, .btnClassStyleMinus {
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.form-section {
+    margin-top: 100px !important;
+    margin: 0px 50px;
+    padding: 20px 70px 20px 70px;
+    background-color: rgba(255, 212, 148, 0.534);
+    border-radius: 3px;
+}
+
+.feedbackTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.feedbackText {
+    font-size: 20px;
+}
+
+.commentOne {
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+.userComm {
+    width: auto;
+    word-wrap: break-word;
+    max-width: 1000px;
+    padding: 5px 10px 5px 40px;
+    font-size: 15px;
+}
+
+.userNiq {
+    display: inline;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.userPick {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.intupDiv {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nameInput {
+    border: 1px solid rgb(255, 170, 72);
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.commTextArea {
+    border: 1px solid rgb(255, 170, 72);
+    border-radius: 5px;
+    width: 500px;
+    height: 100px;
+}
+
+.niqNameInput {
+    display: block;
+}
+
+.dibInput {
+    margin-right: 10px;
+}
+
+.submitButton {
+    color: white;
+    background-color: rgba(255, 212, 148, 0.534);
+    font-size: 20px;
+    font-weight: 800;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 170, 72);
+    margin-top: 10px;
+    margin-left: 175px;
+}
+
+.submitButton:active {
+    transform: scale(0.9);
+}
