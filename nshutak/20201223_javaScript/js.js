@@ -1,33 +1,35 @@
 let customer;
 customer = confirm ('Шановний клієнт, Вам виповнилося 18 років?');
 
+
 let taryf;
 taryf = 0;
-if (customer === true) {
-    question1 = confirm ('Ви вживаєте алкологь?');
-    if (question1 === true) {
+
+if (customer) {
+    question1 = confirm ('Ви вживаєте алкоголь?');
+    if (question1) {
         taryf = taryf + 0,1;
     }
 
     question2 = confirm ('Ви палите сигарети?');
-    if (question1 === true) {
+    if (question2) {
         taryf = taryf + 0,2;
     }
 
     question3 = confirm ('Ви займаєтеся спортом?');
-    if (question3 === true) {
+    if (question3) {
         taryf = taryf - 0,4;
     }
 
     let age;
     age = prompt ('Скільки Вам виповнилося повних років?');
-    if (30 < age <= 60) {
+    if ( (30 < age) && (age < = 60) ) {
         taryf = taryf + 0,1;
     } else {
-        if (age >= 60) {
+        if (age > = 60) {
             alert ('Вибачте, але ми, на жаль, не маємо стахових полісів для Вас');
         } else {
-            if (20 < age <=30) {
+            if ( (20 < age) && (age < =30) ) {
                 taryf = taryf + 0;
             } else {
                 alert ('Вітаємо! Ви дуже крутий студент, адже попри всі п\'янки у вас залишилися гроші на страховку');
